@@ -16,6 +16,17 @@ let topoSheets = [];
 let topoSheetsLoaded = false;
 let deferredInstallPrompt = null;
 
+function isIosSafari() {
+    const ua = window.navigator.userAgent || '';
+    const isIos = /iphone|ipad|ipod/i.test(ua);
+    const isSafari = /safari/i.test(ua) && !/crios|fxios|edgios|opios/i.test(ua);
+    return isIos && isSafari;
+}
+
+function getIosInstallInstructions() {
+    return 'On iPhone Safari, install from the browser menu: tap the Share icon and choose "Add to Home Screen".';
+}
+
 async function loadTopo50Data() {
     const topo50Url = new URL('topo50.json', location.href).href;
     document.getElementById('detailText').textContent = 'Loading Topo50 data...';
@@ -439,6 +450,12 @@ window.addEventListener('appinstalled', () => {
 });
 
 function promptInstall() {
+    if (isIosSafari()) {
+        alert(getIosInstallInstructions());
+        document.getElementById('detailText').textContent = getIosInstallInstructions();
+        return;
+    }
+
     if (!deferredInstallPrompt) {
         alert('Install prompt has not fired yet. Use your browser menu and choose "Add to Home screen" or return to this page after interacting with it.');
         return;
@@ -492,7 +509,11 @@ async function checkInstallStatus() {
         const pwaHints = [];
         if (!iconsOk) pwaHints.push('manifest has no icons');
         if (!swControlled) pwaHints.push('service worker not controlling page');
-        if (!deferredInstallPrompt) pwaHints.push('browser has not fired install prompt yet');
+        if (isIosSafari()) {
+            pwaHints.push('iOS Safari detected — use Share → Add to Home Screen');
+        } else if (!deferredInstallPrompt) {
+            pwaHints.push('browser has not fired install prompt yet');
+        }
         statusEl.textContent = `PWA status: icons=${iconsOk}, swControlled=${swControlled}` + (pwaHints.length ? ' — ' + pwaHints.join('; ') : ' — eligible');
     } catch (e) {
         document.getElementById('installStatus').textContent = 'Install status check failed: ' + e.message;
