@@ -1,0 +1,3562 @@
+[
+  {
+    "sheet": "AS21/AS22",
+    "name": "AS21/AS22 Manawatawhi / Three Kings Islands",
+    "minEast": 1504000,
+    "maxEast": 1528000,
+    "minNorth": 6198000,
+    "maxNorth": 6234000
+  },
+  {
+    "sheet": "AT24",
+    "name": "AT24 Cape Reinga",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 6162000,
+    "maxNorth": 6198000
+  },
+  {
+    "sheet": "AT25",
+    "name": "AT25 North Cape (Otou)",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 6162000,
+    "maxNorth": 6198000
+  },
+  {
+    "sheet": "AU25",
+    "name": "AU25 Houhora",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 6126000,
+    "maxNorth": 6162000
+  },
+  {
+    "sheet": "AU26",
+    "name": "AU26 Waiharara",
+    "minEast": 1612000,
+    "maxEast": 1636000,
+    "minNorth": 6126000,
+    "maxNorth": 6162000
+  },
+  {
+    "sheet": "AU27",
+    "name": "AU27 Mangonui",
+    "minEast": 1636000,
+    "maxEast": 1660000,
+    "minNorth": 6126000,
+    "maxNorth": 6162000
+  },
+  {
+    "sheet": "AU28ptAV28",
+    "name": "AU28ptAV28 Taupo Bay",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 6114000,
+    "maxNorth": 6150000
+  },
+  {
+    "sheet": "AU29ptAV29",
+    "name": "AU29ptAV29 Panaki Island",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 6114000,
+    "maxNorth": 6150000
+  },
+  {
+    "sheet": "AV25ptAV26",
+    "name": "AV25ptAV26 Tauroa Peninsula",
+    "minEast": 1596000,
+    "maxEast": 1620000,
+    "minNorth": 6090000,
+    "maxNorth": 6126000
+  },
+  {
+    "sheet": "AV26",
+    "name": "AV26 Kaitaia",
+    "minEast": 1612000,
+    "maxEast": 1636000,
+    "minNorth": 6090000,
+    "maxNorth": 6126000
+  },
+  {
+    "sheet": "AV27",
+    "name": "AV27 Mangamuka",
+    "minEast": 1636000,
+    "maxEast": 1660000,
+    "minNorth": 6090000,
+    "maxNorth": 6126000
+  },
+  {
+    "sheet": "AV28",
+    "name": "AV28 Whangaroa",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 6090000,
+    "maxNorth": 6126000
+  },
+  {
+    "sheet": "AV29",
+    "name": "AV29 Russell",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 6090000,
+    "maxNorth": 6126000
+  },
+  {
+    "sheet": "AV30",
+    "name": "AV30 Cape Brett",
+    "minEast": 1708000,
+    "maxEast": 1732000,
+    "minNorth": 6090000,
+    "maxNorth": 6126000
+  },
+  {
+    "sheet": "AW26",
+    "name": "AW26 Hokianga Harbour",
+    "minEast": 1612000,
+    "maxEast": 1636000,
+    "minNorth": 6054000,
+    "maxNorth": 6090000
+  },
+  {
+    "sheet": "AW27",
+    "name": "AW27 Rawene",
+    "minEast": 1636000,
+    "maxEast": 1660000,
+    "minNorth": 6054000,
+    "maxNorth": 6090000
+  },
+  {
+    "sheet": "AW28",
+    "name": "AW28 Kaikohe",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 6054000,
+    "maxNorth": 6090000
+  },
+  {
+    "sheet": "AW29",
+    "name": "AW29 Kawakawa",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 6054000,
+    "maxNorth": 6090000
+  },
+  {
+    "sheet": "AW30",
+    "name": "AW30 Whangaruru",
+    "minEast": 1708000,
+    "maxEast": 1732000,
+    "minNorth": 6054000,
+    "maxNorth": 6090000
+  },
+  {
+    "sheet": "AW31",
+    "name": "AW31 Tutukaka",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 6054000,
+    "maxNorth": 6090000
+  },
+  {
+    "sheet": "AW32",
+    "name": "AW32 Poor Knights Islands",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 6054000,
+    "maxNorth": 6090000
+  },
+  {
+    "sheet": "AX27",
+    "name": "AX27 Aranga",
+    "minEast": 1636000,
+    "maxEast": 1660000,
+    "minNorth": 6018000,
+    "maxNorth": 6054000
+  },
+  {
+    "sheet": "AX28",
+    "name": "AX28 Dargaville",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 6018000,
+    "maxNorth": 6054000
+  },
+  {
+    "sheet": "AX29",
+    "name": "AX29 Tangowahine",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 6018000,
+    "maxNorth": 6054000
+  },
+  {
+    "sheet": "AX30",
+    "name": "AX30 Whangarei",
+    "minEast": 1708000,
+    "maxEast": 1732000,
+    "minNorth": 6018000,
+    "maxNorth": 6054000
+  },
+  {
+    "sheet": "AX31",
+    "name": "AX31 Bream Head",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 6018000,
+    "maxNorth": 6054000
+  },
+  {
+    "sheet": "AX32ptsAX31,AY31,AY32",
+    "name": "AX32ptsAX31,AY31,AY32 Hen and Chickens Islands",
+    "minEast": 1748000,
+    "maxEast": 1772000,
+    "minNorth": 6006000,
+    "maxNorth": 6042000
+  },
+  {
+    "sheet": "AX33",
+    "name": "AX33 Mokohinau Islands",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 6018000,
+    "maxNorth": 6054000
+  },
+  {
+    "sheet": "AY28",
+    "name": "AY28 Te Kopuru",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 5982000,
+    "maxNorth": 6018000
+  },
+  {
+    "sheet": "AY29",
+    "name": "AY29 Ruawai",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 5982000,
+    "maxNorth": 6018000
+  },
+  {
+    "sheet": "AY30",
+    "name": "AY30 Maungaturoto",
+    "minEast": 1708000,
+    "maxEast": 1732000,
+    "minNorth": 5982000,
+    "maxNorth": 6018000
+  },
+  {
+    "sheet": "AY31",
+    "name": "AY31 Mangawhai",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5982000,
+    "maxNorth": 6018000
+  },
+  {
+    "sheet": "AY32",
+    "name": "AY32 Cape Rodney",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5982000,
+    "maxNorth": 6018000
+  },
+  {
+    "sheet": "AY33",
+    "name": "AY33 Hauturu / Little Barrier Island",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5982000,
+    "maxNorth": 6018000
+  },
+  {
+    "sheet": "AY34",
+    "name": "AY34 Claris",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5982000,
+    "maxNorth": 6018000
+  },
+  {
+    "sheet": "AZ29",
+    "name": "AZ29 Kaipara Head",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 5946000,
+    "maxNorth": 5982000
+  },
+  {
+    "sheet": "AZ30",
+    "name": "AZ30 Kaipara Harbour",
+    "minEast": 1708000,
+    "maxEast": 1732000,
+    "minNorth": 5946000,
+    "maxNorth": 5982000
+  },
+  {
+    "sheet": "AZ31",
+    "name": "AZ31 Warkworth",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5946000,
+    "maxNorth": 5982000
+  },
+  {
+    "sheet": "AZ32",
+    "name": "AZ32 Kawau Island",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5946000,
+    "maxNorth": 5982000
+  },
+  {
+    "sheet": "AZ34",
+    "name": "AZ34 Moehau",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5946000,
+    "maxNorth": 5982000
+  },
+  {
+    "sheet": "AZ35",
+    "name": "AZ35 Cuvier Island (Repanga Island)",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5946000,
+    "maxNorth": 5982000
+  },
+  {
+    "sheet": "AZ36ptsAZ35,BA35,BA36",
+    "name": "AZ36ptsAZ35,BA35,BA36 Mercury Islands (Iles d'Haussez)",
+    "minEast": 1844000,
+    "maxEast": 1868000,
+    "minNorth": 5937000,
+    "maxNorth": 5973000
+  },
+  {
+    "sheet": "BA30",
+    "name": "BA30 Helensville",
+    "minEast": 1708000,
+    "maxEast": 1732000,
+    "minNorth": 5910000,
+    "maxNorth": 5946000
+  },
+  {
+    "sheet": "BA31",
+    "name": "BA31 Waitemata Harbour",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5910000,
+    "maxNorth": 5946000
+  },
+  {
+    "sheet": "BA32",
+    "name": "BA32 Auckland",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5910000,
+    "maxNorth": 5946000
+  },
+  {
+    "sheet": "BA33",
+    "name": "BA33 Waiheke Island",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5910000,
+    "maxNorth": 5946000
+  },
+  {
+    "sheet": "BA34",
+    "name": "BA34 Coromandel",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5910000,
+    "maxNorth": 5946000
+  },
+  {
+    "sheet": "BA35",
+    "name": "BA35 Whitianga",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5910000,
+    "maxNorth": 5946000
+  },
+  {
+    "sheet": "BA36ptBA35",
+    "name": "BA36ptBA35 Cooks Beach",
+    "minEast": 1844000,
+    "maxEast": 1868000,
+    "minNorth": 5910000,
+    "maxNorth": 5946000
+  },
+  {
+    "sheet": "BB30ptBB31",
+    "name": "BB30ptBB31 Piha",
+    "minEast": 1716000,
+    "maxEast": 1740000,
+    "minNorth": 5874000,
+    "maxNorth": 5910000
+  },
+  {
+    "sheet": "BB31",
+    "name": "BB31 Manukau Harbour",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5874000,
+    "maxNorth": 5910000
+  },
+  {
+    "sheet": "BB32",
+    "name": "BB32 Papatoetoe",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5874000,
+    "maxNorth": 5910000
+  },
+  {
+    "sheet": "BB33",
+    "name": "BB33 Hunua",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5874000,
+    "maxNorth": 5910000
+  },
+  {
+    "sheet": "BB34",
+    "name": "BB34 Thames",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5874000,
+    "maxNorth": 5910000
+  },
+  {
+    "sheet": "BB35",
+    "name": "BB35 Hikuai",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5874000,
+    "maxNorth": 5910000
+  },
+  {
+    "sheet": "BB36",
+    "name": "BB36 Whangamata",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5874000,
+    "maxNorth": 5910000
+  },
+  {
+    "sheet": "BB37ptBB36",
+    "name": "BB37ptBB36 The Alderman Islands",
+    "minEast": 1868000,
+    "maxEast": 1892000,
+    "minNorth": 5874000,
+    "maxNorth": 5910000
+  },
+  {
+    "sheet": "BC31",
+    "name": "BC31 Port Waikato",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5838000,
+    "maxNorth": 5874000
+  },
+  {
+    "sheet": "BC32",
+    "name": "BC32 Pukekawa",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5838000,
+    "maxNorth": 5874000
+  },
+  {
+    "sheet": "BC33",
+    "name": "BC33 Te Kauwhata",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5838000,
+    "maxNorth": 5874000
+  },
+  {
+    "sheet": "BC34",
+    "name": "BC34 Ngatea",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5838000,
+    "maxNorth": 5874000
+  },
+  {
+    "sheet": "BC35",
+    "name": "BC35 Paeroa",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5838000,
+    "maxNorth": 5874000
+  },
+  {
+    "sheet": "BC36",
+    "name": "BC36 Katikati",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5838000,
+    "maxNorth": 5874000
+  },
+  {
+    "sheet": "BC37",
+    "name": "BC37 Mayor Island (Tuhua)",
+    "minEast": 1876000,
+    "maxEast": 1900000,
+    "minNorth": 5838000,
+    "maxNorth": 5874000
+  },
+  {
+    "sheet": "BC40ptBD40",
+    "name": "BC40ptBD40 Whakaari / White Island",
+    "minEast": 1956000,
+    "maxEast": 1980000,
+    "minNorth": 5826000,
+    "maxNorth": 5862000
+  },
+  {
+    "sheet": "BD31ptBD32",
+    "name": "BD31ptBD32 Mount Karioi",
+    "minEast": 1740000,
+    "maxEast": 1764000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BD32",
+    "name": "BD32 Raglan",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BD33",
+    "name": "BD33 Hamilton",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BD34",
+    "name": "BD34 Morrinsville",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BD35",
+    "name": "BD35 Matamata",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BD36",
+    "name": "BD36 Lower Kaimai",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BD37",
+    "name": "BD37 Tauranga",
+    "minEast": 1876000,
+    "maxEast": 1900000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BD38",
+    "name": "BD38 Maketu",
+    "minEast": 1900000,
+    "maxEast": 1924000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BD39ptBE39",
+    "name": "BD39ptBE39 Matata",
+    "minEast": 1924000,
+    "maxEast": 1948000,
+    "minNorth": 5790000,
+    "maxNorth": 5826000
+  },
+  {
+    "sheet": "BD40ptBE40",
+    "name": "BD40ptBE40 Moutohora Island",
+    "minEast": 1948000,
+    "maxEast": 1972000,
+    "minNorth": 5790000,
+    "maxNorth": 5826000
+  },
+  {
+    "sheet": "BD42",
+    "name": "BD42 Te Kaha",
+    "minEast": 1996000,
+    "maxEast": 2020000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BD43",
+    "name": "BD43 Raukokore",
+    "minEast": 2020000,
+    "maxEast": 2044000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BD44",
+    "name": "BD44 Potaka",
+    "minEast": 2044000,
+    "maxEast": 2068000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BD45",
+    "name": "BD45 East Cape",
+    "minEast": 2068000,
+    "maxEast": 2092000,
+    "minNorth": 5802000,
+    "maxNorth": 5838000
+  },
+  {
+    "sheet": "BE31",
+    "name": "BE31 Albatross Point",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE32",
+    "name": "BE32 Kawhia",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE33",
+    "name": "BE33 Pirongia",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE34",
+    "name": "BE34 Kihikihi",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE35",
+    "name": "BE35 Putaruru",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE36",
+    "name": "BE36 Mamaku",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE37",
+    "name": "BE37 Rotorua",
+    "minEast": 1876000,
+    "maxEast": 1900000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE38",
+    "name": "BE38 Lake Rotoma",
+    "minEast": 1900000,
+    "maxEast": 1924000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE39",
+    "name": "BE39 Edgecumbe",
+    "minEast": 1924000,
+    "maxEast": 1948000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE40",
+    "name": "BE40 Whakatane",
+    "minEast": 1948000,
+    "maxEast": 1972000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE41",
+    "name": "BE41 Opotiki",
+    "minEast": 1972000,
+    "maxEast": 1996000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE42",
+    "name": "BE42 Houpoto",
+    "minEast": 1996000,
+    "maxEast": 2020000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE43",
+    "name": "BE43 Huiarua",
+    "minEast": 2020000,
+    "maxEast": 2044000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE44",
+    "name": "BE44 Te Puia Springs",
+    "minEast": 2044000,
+    "maxEast": 2068000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BE45",
+    "name": "BE45 Waipiro Bay",
+    "minEast": 2068000,
+    "maxEast": 2092000,
+    "minNorth": 5766000,
+    "maxNorth": 5802000
+  },
+  {
+    "sheet": "BF31",
+    "name": "BF31 Marokopa",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF32",
+    "name": "BF32 Piopio",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF33",
+    "name": "BF33 Te Kuiti",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF34",
+    "name": "BF34 Benneydale",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF35",
+    "name": "BF35 Whakamaru",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF36",
+    "name": "BF36 Atiamuri",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF37",
+    "name": "BF37 Waiotapu",
+    "minEast": 1876000,
+    "maxEast": 1900000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF38",
+    "name": "BF38 Kaingaroa Forest",
+    "minEast": 1900000,
+    "maxEast": 1924000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF39",
+    "name": "BF39 Galatea",
+    "minEast": 1924000,
+    "maxEast": 1948000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF40",
+    "name": "BF40 Matahi",
+    "minEast": 1948000,
+    "maxEast": 1972000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF41",
+    "name": "BF41 Oponae",
+    "minEast": 1972000,
+    "maxEast": 1996000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF42",
+    "name": "BF42 Matawai",
+    "minEast": 1996000,
+    "maxEast": 2020000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF43",
+    "name": "BF43 Te Karaka",
+    "minEast": 2020000,
+    "maxEast": 2044000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF44",
+    "name": "BF44 Tolaga Bay",
+    "minEast": 2044000,
+    "maxEast": 2068000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BF45ptBF44",
+    "name": "BF45ptBF44 Marau Point",
+    "minEast": 2060000,
+    "maxEast": 2084000,
+    "minNorth": 5730000,
+    "maxNorth": 5766000
+  },
+  {
+    "sheet": "BG30ptBH30",
+    "name": "BG30ptBH30 Opourapa Island",
+    "minEast": 1708000,
+    "maxEast": 1732000,
+    "minNorth": 5682000,
+    "maxNorth": 5718000
+  },
+  {
+    "sheet": "BG31",
+    "name": "BG31 Mokau",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG32",
+    "name": "BG32 Ohura",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG33",
+    "name": "BG33 Ongarue",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG34",
+    "name": "BG34 Piropiro",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG35",
+    "name": "BG35 Tihoi",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG36",
+    "name": "BG36 Taupo",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG37",
+    "name": "BG37 Iwitahi",
+    "minEast": 1876000,
+    "maxEast": 1900000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG38",
+    "name": "BG38 Wairapukao",
+    "minEast": 1900000,
+    "maxEast": 1924000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG39",
+    "name": "BG39 Ruatahuna",
+    "minEast": 1924000,
+    "maxEast": 1948000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG40",
+    "name": "BG40 Waikaremoana",
+    "minEast": 1948000,
+    "maxEast": 1972000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG41",
+    "name": "BG41 Ruakituri",
+    "minEast": 1972000,
+    "maxEast": 1996000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG42",
+    "name": "BG42 Ngatapa",
+    "minEast": 1996000,
+    "maxEast": 2020000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG43",
+    "name": "BG43 Gisborne",
+    "minEast": 2020000,
+    "maxEast": 2044000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BG44",
+    "name": "BG44 Whangara",
+    "minEast": 2044000,
+    "maxEast": 2068000,
+    "minNorth": 5694000,
+    "maxNorth": 5730000
+  },
+  {
+    "sheet": "BH28",
+    "name": "BH28 Oakura",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH29",
+    "name": "BH29 New Plymouth",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH30",
+    "name": "BH30 Urenui",
+    "minEast": 1708000,
+    "maxEast": 1732000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH31",
+    "name": "BH31 Whangamomona",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH32",
+    "name": "BH32 Tokirima",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH33",
+    "name": "BH33 Retaruke",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH34",
+    "name": "BH34 Raurimu",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH35",
+    "name": "BH35 Turangi",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH36",
+    "name": "BH36 Motutere",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH37",
+    "name": "BH37 Rangitaiki",
+    "minEast": 1876000,
+    "maxEast": 1900000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH38",
+    "name": "BH38 Te Haroto",
+    "minEast": 1900000,
+    "maxEast": 1924000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH39",
+    "name": "BH39 Putorino",
+    "minEast": 1924000,
+    "maxEast": 1948000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH40",
+    "name": "BH40 Mohaka",
+    "minEast": 1948000,
+    "maxEast": 1972000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH41",
+    "name": "BH41 Wairoa",
+    "minEast": 1972000,
+    "maxEast": 1996000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH42",
+    "name": "BH42 Nuhaka",
+    "minEast": 1996000,
+    "maxEast": 2020000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BH43",
+    "name": "BH43 Wharerata",
+    "minEast": 2020000,
+    "maxEast": 2044000,
+    "minNorth": 5658000,
+    "maxNorth": 5694000
+  },
+  {
+    "sheet": "BJ28",
+    "name": "BJ28 Opunake",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ29",
+    "name": "BJ29 Mount Taranaki or Mount Egmont",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ30",
+    "name": "BJ30 Stratford",
+    "minEast": 1708000,
+    "maxEast": 1732000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ31",
+    "name": "BJ31 Strathmore",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ32",
+    "name": "BJ32 Pipiriki",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ33",
+    "name": "BJ33 Raetihi",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ34",
+    "name": "BJ34 Mount Ruapehu",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ35",
+    "name": "BJ35 Waiouru",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ36",
+    "name": "BJ36 Tawake Tohunga",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ37",
+    "name": "BJ37 Kuripapango",
+    "minEast": 1876000,
+    "maxEast": 1900000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ38",
+    "name": "BJ38 Te Pohue",
+    "minEast": 1900000,
+    "maxEast": 1924000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ39",
+    "name": "BJ39 Whirinaki",
+    "minEast": 1924000,
+    "maxEast": 1948000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ40ptBJ39",
+    "name": "BJ40ptBJ39 Waipatiki Beach",
+    "minEast": 1940000,
+    "maxEast": 1964000,
+    "minNorth": 5622000,
+    "maxNorth": 5658000
+  },
+  {
+    "sheet": "BJ43ptsBJ42,BH42,BH43",
+    "name": "BJ43ptsBJ42,BH42,BH43 Mahia Peninsula",
+    "minEast": 2012000,
+    "maxEast": 2036000,
+    "minNorth": 5634000,
+    "maxNorth": 5670000
+  },
+  {
+    "sheet": "BK28ptBJ28",
+    "name": "BK28ptBJ28 Pihama",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 5598000,
+    "maxNorth": 5634000
+  },
+  {
+    "sheet": "BK29",
+    "name": "BK29 Manaia",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BK30",
+    "name": "BK30 Patea",
+    "minEast": 1708000,
+    "maxEast": 1732000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BK31",
+    "name": "BK31 Waverley",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BK32",
+    "name": "BK32 Kai Iwi",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BK33",
+    "name": "BK33 Matahiwi",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BK34",
+    "name": "BK34 Pohonui",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BK35",
+    "name": "BK35 Taihape",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BK36",
+    "name": "BK36 Taoroa Junction",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BK37",
+    "name": "BK37 Tikokino",
+    "minEast": 1876000,
+    "maxEast": 1900000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BK38",
+    "name": "BK38 Maraekakaho",
+    "minEast": 1900000,
+    "maxEast": 1924000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BK39",
+    "name": "BK39 Hastings",
+    "minEast": 1924000,
+    "maxEast": 1948000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BK40ptBK39",
+    "name": "BK40ptBK39 Cape Kidnappers",
+    "minEast": 1940000,
+    "maxEast": 1964000,
+    "minNorth": 5586000,
+    "maxNorth": 5622000
+  },
+  {
+    "sheet": "BL31ptBK31",
+    "name": "BL31ptBK31 Waiinu Beach",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5562000,
+    "maxNorth": 5598000
+  },
+  {
+    "sheet": "BL32",
+    "name": "BL32 Wanganui",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5550000,
+    "maxNorth": 5586000
+  },
+  {
+    "sheet": "BL33",
+    "name": "BL33 Marton",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5550000,
+    "maxNorth": 5586000
+  },
+  {
+    "sheet": "BL34",
+    "name": "BL34 Hunterville",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5550000,
+    "maxNorth": 5586000
+  },
+  {
+    "sheet": "BL35",
+    "name": "BL35 Kimbolton",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5550000,
+    "maxNorth": 5586000
+  },
+  {
+    "sheet": "BL36",
+    "name": "BL36 Norsewood",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5550000,
+    "maxNorth": 5586000
+  },
+  {
+    "sheet": "BL37",
+    "name": "BL37 Ongaonga",
+    "minEast": 1876000,
+    "maxEast": 1900000,
+    "minNorth": 5550000,
+    "maxNorth": 5586000
+  },
+  {
+    "sheet": "BL38",
+    "name": "BL38 Waipukurau",
+    "minEast": 1900000,
+    "maxEast": 1924000,
+    "minNorth": 5550000,
+    "maxNorth": 5586000
+  },
+  {
+    "sheet": "BL39",
+    "name": "BL39 Waimarama",
+    "minEast": 1924000,
+    "maxEast": 1948000,
+    "minNorth": 5550000,
+    "maxNorth": 5586000
+  },
+  {
+    "sheet": "BM24ptBN24",
+    "name": "BM24ptBN24 Cape Farewell",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5502000,
+    "maxNorth": 5538000
+  },
+  {
+    "sheet": "BM25ptBN25",
+    "name": "BM25ptBN25 Farewell Spit",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 5502000,
+    "maxNorth": 5538000
+  },
+  {
+    "sheet": "BM33",
+    "name": "BM33 Foxton",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5514000,
+    "maxNorth": 5550000
+  },
+  {
+    "sheet": "BM34",
+    "name": "BM34 Palmerston North",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5514000,
+    "maxNorth": 5550000
+  },
+  {
+    "sheet": "BM35",
+    "name": "BM35 Woodville",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5514000,
+    "maxNorth": 5550000
+  },
+  {
+    "sheet": "BM36",
+    "name": "BM36 Dannevirke",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5514000,
+    "maxNorth": 5550000
+  },
+  {
+    "sheet": "BM37",
+    "name": "BM37 Weber",
+    "minEast": 1876000,
+    "maxEast": 1900000,
+    "minNorth": 5514000,
+    "maxNorth": 5550000
+  },
+  {
+    "sheet": "BM38",
+    "name": "BM38 Porangahau",
+    "minEast": 1900000,
+    "maxEast": 1924000,
+    "minNorth": 5514000,
+    "maxNorth": 5550000
+  },
+  {
+    "sheet": "BM39ptBM38",
+    "name": "BM39ptBM38 Blackhead",
+    "minEast": 1916000,
+    "maxEast": 1940000,
+    "minNorth": 5514000,
+    "maxNorth": 5550000
+  },
+  {
+    "sheet": "BN22",
+    "name": "BN22 Kahurangi Point",
+    "minEast": 1516000,
+    "maxEast": 1540000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BN23",
+    "name": "BN23 Paturau River",
+    "minEast": 1540000,
+    "maxEast": 1564000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BN24",
+    "name": "BN24 Collingwood",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BN25",
+    "name": "BN25 Totaranui",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BN28",
+    "name": "BN28 Port Hardy",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BN29ptBN28",
+    "name": "BN29ptBN28 Cape Stephens",
+    "minEast": 1676000,
+    "maxEast": 1700000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BN32ptBP32",
+    "name": "BN32ptBP32 Kapiti Island",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5466000,
+    "maxNorth": 5502000
+  },
+  {
+    "sheet": "BN33",
+    "name": "BN33 Levin",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BN34",
+    "name": "BN34 Shannon",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BN35",
+    "name": "BN35 Alfredton",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BN36",
+    "name": "BN36 Pongaroa",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BN37",
+    "name": "BN37 Akitio",
+    "minEast": 1876000,
+    "maxEast": 1900000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BN38ptBN37",
+    "name": "BN38ptBN37 Cape Turnagain",
+    "minEast": 1892000,
+    "maxEast": 1916000,
+    "minNorth": 5478000,
+    "maxNorth": 5514000
+  },
+  {
+    "sheet": "BP22",
+    "name": "BP22 Heaphy Beach",
+    "minEast": 1516000,
+    "maxEast": 1540000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP23",
+    "name": "BP23 Gouland Downs",
+    "minEast": 1540000,
+    "maxEast": 1564000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP24",
+    "name": "BP24 Takaka",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP25",
+    "name": "BP25 Motueka",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP26ptBP27",
+    "name": "BP26ptBP27 Pepin Island",
+    "minEast": 1620000,
+    "maxEast": 1644000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP27",
+    "name": "BP27 Croisilles Hill",
+    "minEast": 1636000,
+    "maxEast": 1660000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP28",
+    "name": "BP28 Te Aumiti (French Pass)",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP29",
+    "name": "BP29 Endeavour Inlet",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP30ptBQ30",
+    "name": "BP30ptBQ30 Cape Koamaru",
+    "minEast": 1708000,
+    "maxEast": 1732000,
+    "minNorth": 5430000,
+    "maxNorth": 5466000
+  },
+  {
+    "sheet": "BP31",
+    "name": "BP31 Porirua",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP32",
+    "name": "BP32 Paraparaumu",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP33",
+    "name": "BP33 Featherston",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP34",
+    "name": "BP34 Masterton",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP35",
+    "name": "BP35 Bideford",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BP36",
+    "name": "BP36 Castlepoint",
+    "minEast": 1852000,
+    "maxEast": 1876000,
+    "minNorth": 5442000,
+    "maxNorth": 5478000
+  },
+  {
+    "sheet": "BQ21ptBQ22",
+    "name": "BQ21ptBQ22 Kongahu Point",
+    "minEast": 1500000,
+    "maxEast": 1524000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ22",
+    "name": "BQ22 Karamea",
+    "minEast": 1516000,
+    "maxEast": 1540000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ23",
+    "name": "BQ23 Wangapeka Saddle",
+    "minEast": 1540000,
+    "maxEast": 1564000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ24",
+    "name": "BQ24 Tapawera",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ25",
+    "name": "BQ25 Mapua",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ26",
+    "name": "BQ26 Nelson",
+    "minEast": 1612000,
+    "maxEast": 1636000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ27",
+    "name": "BQ27 Rai Valley",
+    "minEast": 1636000,
+    "maxEast": 1660000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ28",
+    "name": "BQ28 Havelock",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ29",
+    "name": "BQ29 Waikawa",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ31",
+    "name": "BQ31 Wellington",
+    "minEast": 1732000,
+    "maxEast": 1756000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ32",
+    "name": "BQ32 Lower Hutt",
+    "minEast": 1756000,
+    "maxEast": 1780000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ33",
+    "name": "BQ33 Lake Wairarapa",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ34",
+    "name": "BQ34 Martinborough",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ35",
+    "name": "BQ35 Te Wharau",
+    "minEast": 1828000,
+    "maxEast": 1852000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BQ36ptBQ35",
+    "name": "BQ36ptBQ35 Patanui Stream",
+    "minEast": 1844000,
+    "maxEast": 1868000,
+    "minNorth": 5406000,
+    "maxNorth": 5442000
+  },
+  {
+    "sheet": "BR20",
+    "name": "BR20 Westport",
+    "minEast": 1468000,
+    "maxEast": 1492000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BR21",
+    "name": "BR21 Granity",
+    "minEast": 1492000,
+    "maxEast": 1516000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BR22",
+    "name": "BR22 Lyell",
+    "minEast": 1516000,
+    "maxEast": 1540000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BR23",
+    "name": "BR23 Murchison",
+    "minEast": 1540000,
+    "maxEast": 1564000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BR24",
+    "name": "BR24 Kawatiri",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BR25",
+    "name": "BR25 Tophouse",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BR26",
+    "name": "BR26 Mount Patriarch",
+    "minEast": 1612000,
+    "maxEast": 1636000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BR27",
+    "name": "BR27 Waihopai",
+    "minEast": 1636000,
+    "maxEast": 1660000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BR28",
+    "name": "BR28 Blenheim",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BR29",
+    "name": "BR29 Seddon",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BR33",
+    "name": "BR33 Ngawi",
+    "minEast": 1780000,
+    "maxEast": 1804000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BR34",
+    "name": "BR34 Manurewa Point",
+    "minEast": 1804000,
+    "maxEast": 1828000,
+    "minNorth": 5370000,
+    "maxNorth": 5406000
+  },
+  {
+    "sheet": "BS19",
+    "name": "BS19 Punakaiki",
+    "minEast": 1444000,
+    "maxEast": 1468000,
+    "minNorth": 5334000,
+    "maxNorth": 5370000
+  },
+  {
+    "sheet": "BS20",
+    "name": "BS20 Charleston",
+    "minEast": 1468000,
+    "maxEast": 1492000,
+    "minNorth": 5334000,
+    "maxNorth": 5370000
+  },
+  {
+    "sheet": "BS21",
+    "name": "BS21 Reefton",
+    "minEast": 1492000,
+    "maxEast": 1516000,
+    "minNorth": 5334000,
+    "maxNorth": 5370000
+  },
+  {
+    "sheet": "BS22",
+    "name": "BS22 Shenandoah",
+    "minEast": 1516000,
+    "maxEast": 1540000,
+    "minNorth": 5334000,
+    "maxNorth": 5370000
+  },
+  {
+    "sheet": "BS23",
+    "name": "BS23 Matakitaki",
+    "minEast": 1540000,
+    "maxEast": 1564000,
+    "minNorth": 5334000,
+    "maxNorth": 5370000
+  },
+  {
+    "sheet": "BS24",
+    "name": "BS24 Mount Robert",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5334000,
+    "maxNorth": 5370000
+  },
+  {
+    "sheet": "BS25",
+    "name": "BS25 Severn",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 5334000,
+    "maxNorth": 5370000
+  },
+  {
+    "sheet": "BS26",
+    "name": "BS26 Mount Muller",
+    "minEast": 1612000,
+    "maxEast": 1636000,
+    "minNorth": 5334000,
+    "maxNorth": 5370000
+  },
+  {
+    "sheet": "BS27",
+    "name": "BS27 Tapuae-o-Uenuku",
+    "minEast": 1636000,
+    "maxEast": 1660000,
+    "minNorth": 5334000,
+    "maxNorth": 5370000
+  },
+  {
+    "sheet": "BS28",
+    "name": "BS28 Kekerengu",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 5334000,
+    "maxNorth": 5370000
+  },
+  {
+    "sheet": "BS29",
+    "name": "BS29 Ward",
+    "minEast": 1684000,
+    "maxEast": 1708000,
+    "minNorth": 5334000,
+    "maxNorth": 5370000
+  },
+  {
+    "sheet": "BT19",
+    "name": "BT19 Runanga",
+    "minEast": 1444000,
+    "maxEast": 1468000,
+    "minNorth": 5298000,
+    "maxNorth": 5334000
+  },
+  {
+    "sheet": "BT20",
+    "name": "BT20 Ahaura",
+    "minEast": 1468000,
+    "maxEast": 1492000,
+    "minNorth": 5298000,
+    "maxNorth": 5334000
+  },
+  {
+    "sheet": "BT21",
+    "name": "BT21 Waiuta",
+    "minEast": 1492000,
+    "maxEast": 1516000,
+    "minNorth": 5298000,
+    "maxNorth": 5334000
+  },
+  {
+    "sheet": "BT22",
+    "name": "BT22 Springs Junction",
+    "minEast": 1516000,
+    "maxEast": 1540000,
+    "minNorth": 5298000,
+    "maxNorth": 5334000
+  },
+  {
+    "sheet": "BT23",
+    "name": "BT23 Lewis Pass",
+    "minEast": 1540000,
+    "maxEast": 1564000,
+    "minNorth": 5298000,
+    "maxNorth": 5334000
+  },
+  {
+    "sheet": "BT24",
+    "name": "BT24 Ada Flat",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5298000,
+    "maxNorth": 5334000
+  },
+  {
+    "sheet": "BT25",
+    "name": "BT25 Mount Northampton",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 5298000,
+    "maxNorth": 5334000
+  },
+  {
+    "sheet": "BT26",
+    "name": "BT26 Mount Clear",
+    "minEast": 1612000,
+    "maxEast": 1636000,
+    "minNorth": 5298000,
+    "maxNorth": 5334000
+  },
+  {
+    "sheet": "BT27",
+    "name": "BT27 Kaikoura",
+    "minEast": 1636000,
+    "maxEast": 1660000,
+    "minNorth": 5298000,
+    "maxNorth": 5334000
+  },
+  {
+    "sheet": "BT28",
+    "name": "BT28 Mangamaunu",
+    "minEast": 1660000,
+    "maxEast": 1684000,
+    "minNorth": 5298000,
+    "maxNorth": 5334000
+  },
+  {
+    "sheet": "BU18",
+    "name": "BU18 Hokitika",
+    "minEast": 1420000,
+    "maxEast": 1444000,
+    "minNorth": 5262000,
+    "maxNorth": 5298000
+  },
+  {
+    "sheet": "BU19",
+    "name": "BU19 Kumara",
+    "minEast": 1444000,
+    "maxEast": 1468000,
+    "minNorth": 5262000,
+    "maxNorth": 5298000
+  },
+  {
+    "sheet": "BU20",
+    "name": "BU20 Moana",
+    "minEast": 1468000,
+    "maxEast": 1492000,
+    "minNorth": 5262000,
+    "maxNorth": 5298000
+  },
+  {
+    "sheet": "BU21",
+    "name": "BU21 Haupiri",
+    "minEast": 1492000,
+    "maxEast": 1516000,
+    "minNorth": 5262000,
+    "maxNorth": 5298000
+  },
+  {
+    "sheet": "BU22",
+    "name": "BU22 Lake Sumner",
+    "minEast": 1516000,
+    "maxEast": 1540000,
+    "minNorth": 5262000,
+    "maxNorth": 5298000
+  },
+  {
+    "sheet": "BU23",
+    "name": "BU23 Boyle Village",
+    "minEast": 1540000,
+    "maxEast": 1564000,
+    "minNorth": 5262000,
+    "maxNorth": 5298000
+  },
+  {
+    "sheet": "BU24",
+    "name": "BU24 Hanmer Springs",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5262000,
+    "maxNorth": 5298000
+  },
+  {
+    "sheet": "BU25",
+    "name": "BU25 Waiau",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 5262000,
+    "maxNorth": 5298000
+  },
+  {
+    "sheet": "BU26",
+    "name": "BU26 Parnassus",
+    "minEast": 1612000,
+    "maxEast": 1636000,
+    "minNorth": 5262000,
+    "maxNorth": 5298000
+  },
+  {
+    "sheet": "BU27",
+    "name": "BU27 Oaro",
+    "minEast": 1636000,
+    "maxEast": 1660000,
+    "minNorth": 5262000,
+    "maxNorth": 5298000
+  },
+  {
+    "sheet": "BV16",
+    "name": "BV16 Mount Oneone",
+    "minEast": 1372000,
+    "maxEast": 1396000,
+    "minNorth": 5226000,
+    "maxNorth": 5262000
+  },
+  {
+    "sheet": "BV17",
+    "name": "BV17 Kakapotahi",
+    "minEast": 1396000,
+    "maxEast": 1420000,
+    "minNorth": 5226000,
+    "maxNorth": 5262000
+  },
+  {
+    "sheet": "BV18",
+    "name": "BV18 Kokatahi",
+    "minEast": 1420000,
+    "maxEast": 1444000,
+    "minNorth": 5226000,
+    "maxNorth": 5262000
+  },
+  {
+    "sheet": "BV19",
+    "name": "BV19 Lake Kaniere",
+    "minEast": 1444000,
+    "maxEast": 1468000,
+    "minNorth": 5226000,
+    "maxNorth": 5262000
+  },
+  {
+    "sheet": "BV20",
+    "name": "BV20 Otira",
+    "minEast": 1468000,
+    "maxEast": 1492000,
+    "minNorth": 5226000,
+    "maxNorth": 5262000
+  },
+  {
+    "sheet": "BV21",
+    "name": "BV21 Cass",
+    "minEast": 1492000,
+    "maxEast": 1516000,
+    "minNorth": 5226000,
+    "maxNorth": 5262000
+  },
+  {
+    "sheet": "BV22",
+    "name": "BV22 Dampier Corner",
+    "minEast": 1516000,
+    "maxEast": 1540000,
+    "minNorth": 5226000,
+    "maxNorth": 5262000
+  },
+  {
+    "sheet": "BV23",
+    "name": "BV23 Virginia",
+    "minEast": 1540000,
+    "maxEast": 1564000,
+    "minNorth": 5226000,
+    "maxNorth": 5262000
+  },
+  {
+    "sheet": "BV24",
+    "name": "BV24 Waipara",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5226000,
+    "maxNorth": 5262000
+  },
+  {
+    "sheet": "BV25",
+    "name": "BV25 Motunau Beach",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 5226000,
+    "maxNorth": 5262000
+  },
+  {
+    "sheet": "BV26",
+    "name": "BV26 Cheviot",
+    "minEast": 1612000,
+    "maxEast": 1636000,
+    "minNorth": 5226000,
+    "maxNorth": 5262000
+  },
+  {
+    "sheet": "BW14ptBX14",
+    "name": "BW14ptBX14 Waikowhai Bluff",
+    "minEast": 1324000,
+    "maxEast": 1348000,
+    "minNorth": 5178000,
+    "maxNorth": 5214000
+  },
+  {
+    "sheet": "BW15",
+    "name": "BW15 Okarito",
+    "minEast": 1348000,
+    "maxEast": 1372000,
+    "minNorth": 5190000,
+    "maxNorth": 5226000
+  },
+  {
+    "sheet": "BW16",
+    "name": "BW16 Whataroa",
+    "minEast": 1372000,
+    "maxEast": 1396000,
+    "minNorth": 5190000,
+    "maxNorth": 5226000
+  },
+  {
+    "sheet": "BW17",
+    "name": "BW17 Harihari",
+    "minEast": 1396000,
+    "maxEast": 1420000,
+    "minNorth": 5190000,
+    "maxNorth": 5226000
+  },
+  {
+    "sheet": "BW18",
+    "name": "BW18 Whitcombe Pass",
+    "minEast": 1420000,
+    "maxEast": 1444000,
+    "minNorth": 5190000,
+    "maxNorth": 5226000
+  },
+  {
+    "sheet": "BW19",
+    "name": "BW19 Taylors Camp",
+    "minEast": 1444000,
+    "maxEast": 1468000,
+    "minNorth": 5190000,
+    "maxNorth": 5226000
+  },
+  {
+    "sheet": "BW20",
+    "name": "BW20 Lake Coleridge",
+    "minEast": 1468000,
+    "maxEast": 1492000,
+    "minNorth": 5190000,
+    "maxNorth": 5226000
+  },
+  {
+    "sheet": "BW21",
+    "name": "BW21 Springfield",
+    "minEast": 1492000,
+    "maxEast": 1516000,
+    "minNorth": 5190000,
+    "maxNorth": 5226000
+  },
+  {
+    "sheet": "BW22",
+    "name": "BW22 Oxford",
+    "minEast": 1516000,
+    "maxEast": 1540000,
+    "minNorth": 5190000,
+    "maxNorth": 5226000
+  },
+  {
+    "sheet": "BW23",
+    "name": "BW23 Cust",
+    "minEast": 1540000,
+    "maxEast": 1564000,
+    "minNorth": 5190000,
+    "maxNorth": 5226000
+  },
+  {
+    "sheet": "BW24",
+    "name": "BW24 Rangiora",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5190000,
+    "maxNorth": 5226000
+  },
+  {
+    "sheet": "BW25ptBW24",
+    "name": "BW25ptBW24 Amberley Beach",
+    "minEast": 1580000,
+    "maxEast": 1604000,
+    "minNorth": 5190000,
+    "maxNorth": 5226000
+  },
+  {
+    "sheet": "BX12ptBY12",
+    "name": "BX12ptBY12 Otumotu Point",
+    "minEast": 1276000,
+    "maxEast": 1300000,
+    "minNorth": 5142000,
+    "maxNorth": 5178000
+  },
+  {
+    "sheet": "BX13",
+    "name": "BX13 Heretaniwha Point",
+    "minEast": 1300000,
+    "maxEast": 1324000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX14",
+    "name": "BX14 Gillespies Beach",
+    "minEast": 1324000,
+    "maxEast": 1348000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX15",
+    "name": "BX15 Fox Glacier",
+    "minEast": 1348000,
+    "maxEast": 1372000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX16",
+    "name": "BX16 Mount Elie De Beaumont",
+    "minEast": 1372000,
+    "maxEast": 1396000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX17",
+    "name": "BX17 Mount Sibbald",
+    "minEast": 1396000,
+    "maxEast": 1420000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX18",
+    "name": "BX18 Lake Clearwater",
+    "minEast": 1420000,
+    "maxEast": 1444000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX19",
+    "name": "BX19 Hakatere",
+    "minEast": 1444000,
+    "maxEast": 1468000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX20",
+    "name": "BX20 Methven",
+    "minEast": 1468000,
+    "maxEast": 1492000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX21",
+    "name": "BX21 Windwhistle",
+    "minEast": 1492000,
+    "maxEast": 1516000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX22",
+    "name": "BX22 Darfield",
+    "minEast": 1516000,
+    "maxEast": 1540000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX23",
+    "name": "BX23 Lincoln",
+    "minEast": 1540000,
+    "maxEast": 1564000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX24",
+    "name": "BX24 Christchurch",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BX25",
+    "name": "BX25 Duvauchelle",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 5154000,
+    "maxNorth": 5190000
+  },
+  {
+    "sheet": "BY10ptBZ10",
+    "name": "BY10ptBZ10 Jackson Bay",
+    "minEast": 1228000,
+    "maxEast": 1252000,
+    "minNorth": 5106000,
+    "maxNorth": 5142000
+  },
+  {
+    "sheet": "BY11",
+    "name": "BY11 Hannah's Clearing",
+    "minEast": 1252000,
+    "maxEast": 1276000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY12",
+    "name": "BY12 Haast",
+    "minEast": 1276000,
+    "maxEast": 1300000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY13",
+    "name": "BY13 Lake Paringa",
+    "minEast": 1300000,
+    "maxEast": 1324000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY14",
+    "name": "BY14 Mount Ward",
+    "minEast": 1324000,
+    "maxEast": 1348000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY15",
+    "name": "BY15 Birch Hill",
+    "minEast": 1348000,
+    "maxEast": 1372000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY16",
+    "name": "BY16 Mount Stevenson",
+    "minEast": 1372000,
+    "maxEast": 1396000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY17",
+    "name": "BY17 Lake Tekapo",
+    "minEast": 1396000,
+    "maxEast": 1420000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY18",
+    "name": "BY18 Ashwick Flat",
+    "minEast": 1420000,
+    "maxEast": 1444000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY19",
+    "name": "BY19 Arundel",
+    "minEast": 1444000,
+    "maxEast": 1468000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY20",
+    "name": "BY20 Hinds",
+    "minEast": 1468000,
+    "maxEast": 1492000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY21",
+    "name": "BY21 Ashburton",
+    "minEast": 1492000,
+    "maxEast": 1516000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY22",
+    "name": "BY22 Pendarves",
+    "minEast": 1516000,
+    "maxEast": 1540000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY23",
+    "name": "BY23 Fishermans Point",
+    "minEast": 1540000,
+    "maxEast": 1564000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY24",
+    "name": "BY24 Birdlings Flat",
+    "minEast": 1564000,
+    "maxEast": 1588000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BY25",
+    "name": "BY25 Akaroa",
+    "minEast": 1588000,
+    "maxEast": 1612000,
+    "minNorth": 5118000,
+    "maxNorth": 5154000
+  },
+  {
+    "sheet": "BZ09",
+    "name": "BZ09 Awarua Point",
+    "minEast": 1204000,
+    "maxEast": 1228000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ10",
+    "name": "BZ10 Cascade Plateau",
+    "minEast": 1228000,
+    "maxEast": 1252000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ11",
+    "name": "BZ11 Mount Pollux",
+    "minEast": 1252000,
+    "maxEast": 1276000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ12",
+    "name": "BZ12 Makarora",
+    "minEast": 1276000,
+    "maxEast": 1300000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ13",
+    "name": "BZ13 Haast Pass / Tioripatea",
+    "minEast": 1300000,
+    "maxEast": 1324000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ14",
+    "name": "BZ14 Mount Barth",
+    "minEast": 1324000,
+    "maxEast": 1348000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ15",
+    "name": "BZ15 Twizel",
+    "minEast": 1348000,
+    "maxEast": 1372000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ16",
+    "name": "BZ16 Dover Pass",
+    "minEast": 1372000,
+    "maxEast": 1396000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ17",
+    "name": "BZ17 Burkes Pass",
+    "minEast": 1396000,
+    "maxEast": 1420000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ18",
+    "name": "BZ18 Fairlie",
+    "minEast": 1420000,
+    "maxEast": 1444000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ19",
+    "name": "BZ19 Timaru",
+    "minEast": 1444000,
+    "maxEast": 1468000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ20",
+    "name": "BZ20 Clandeboye",
+    "minEast": 1468000,
+    "maxEast": 1492000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "BZ21ptBZ20",
+    "name": "BZ21ptBZ20 Longbeach",
+    "minEast": 1484000,
+    "maxEast": 1508000,
+    "minNorth": 5082000,
+    "maxNorth": 5118000
+  },
+  {
+    "sheet": "CA07ptCB07",
+    "name": "CA07ptCB07 Poison Bay",
+    "minEast": 1156000,
+    "maxEast": 1180000,
+    "minNorth": 5034000,
+    "maxNorth": 5070000
+  },
+  {
+    "sheet": "CA08",
+    "name": "CA08 Milford Sound / Piopiotahi",
+    "minEast": 1180000,
+    "maxEast": 1204000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CA09",
+    "name": "CA09 Alabaster Pass",
+    "minEast": 1204000,
+    "maxEast": 1228000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CA10",
+    "name": "CA10 Lake Williamson",
+    "minEast": 1228000,
+    "maxEast": 1252000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CA11",
+    "name": "CA11 Aspiring Flats",
+    "minEast": 1252000,
+    "maxEast": 1276000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CA12",
+    "name": "CA12 Minaret Bay",
+    "minEast": 1276000,
+    "maxEast": 1300000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CA13",
+    "name": "CA13 Lake Hawea",
+    "minEast": 1300000,
+    "maxEast": 1324000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CA14",
+    "name": "CA14 Lindis Pass",
+    "minEast": 1324000,
+    "maxEast": 1348000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CA15",
+    "name": "CA15 Omarama",
+    "minEast": 1348000,
+    "maxEast": 1372000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CA16",
+    "name": "CA16 Otematata",
+    "minEast": 1372000,
+    "maxEast": 1396000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CA17",
+    "name": "CA17 Cattle Creek",
+    "minEast": 1396000,
+    "maxEast": 1420000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CA18",
+    "name": "CA18 Waituna",
+    "minEast": 1420000,
+    "maxEast": 1444000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CA19",
+    "name": "CA19 Pareora",
+    "minEast": 1444000,
+    "maxEast": 1468000,
+    "minNorth": 5046000,
+    "maxNorth": 5082000
+  },
+  {
+    "sheet": "CB06",
+    "name": "CB06 Mount Elder",
+    "minEast": 1132000,
+    "maxEast": 1156000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB07",
+    "name": "CB07 Bligh Sound",
+    "minEast": 1156000,
+    "maxEast": 1180000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB08",
+    "name": "CB08 Homer Saddle",
+    "minEast": 1180000,
+    "maxEast": 1204000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB09",
+    "name": "CB09 Hollyford",
+    "minEast": 1204000,
+    "maxEast": 1228000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB10",
+    "name": "CB10 Glenorchy",
+    "minEast": 1228000,
+    "maxEast": 1252000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB11",
+    "name": "CB11 Arrowtown",
+    "minEast": 1252000,
+    "maxEast": 1276000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB12",
+    "name": "CB12 Cardrona",
+    "minEast": 1276000,
+    "maxEast": 1300000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB13",
+    "name": "CB13 Tarras",
+    "minEast": 1300000,
+    "maxEast": 1324000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB14",
+    "name": "CB14 Dunstan Peak",
+    "minEast": 1324000,
+    "maxEast": 1348000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB15",
+    "name": "CB15 Idaburn",
+    "minEast": 1348000,
+    "maxEast": 1372000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB16",
+    "name": "CB16 Naseby",
+    "minEast": 1372000,
+    "maxEast": 1396000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB17",
+    "name": "CB17 Kurow",
+    "minEast": 1396000,
+    "maxEast": 1420000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB18",
+    "name": "CB18 Ikawai",
+    "minEast": 1420000,
+    "maxEast": 1444000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CB19",
+    "name": "CB19 Waimate",
+    "minEast": 1444000,
+    "maxEast": 1468000,
+    "minNorth": 5010000,
+    "maxNorth": 5046000
+  },
+  {
+    "sheet": "CC05",
+    "name": "CC05 Colonial Head",
+    "minEast": 1108000,
+    "maxEast": 1132000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC06",
+    "name": "CC06 Caswell Sound",
+    "minEast": 1132000,
+    "maxEast": 1156000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC07",
+    "name": "CC07 North West Arm",
+    "minEast": 1156000,
+    "maxEast": 1180000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC08",
+    "name": "CC08 Welcome Point",
+    "minEast": 1180000,
+    "maxEast": 1204000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC09",
+    "name": "CC09 North Malvora Lake",
+    "minEast": 1204000,
+    "maxEast": 1228000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC10",
+    "name": "CC10 Walter Peak",
+    "minEast": 1228000,
+    "maxEast": 1252000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC11",
+    "name": "CC11 Queenstown",
+    "minEast": 1252000,
+    "maxEast": 1276000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC12",
+    "name": "CC12 Bannockburn",
+    "minEast": 1276000,
+    "maxEast": 1300000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC13",
+    "name": "CC13 Alexandra",
+    "minEast": 1300000,
+    "maxEast": 1324000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC14",
+    "name": "CC14 Ophir",
+    "minEast": 1324000,
+    "maxEast": 1348000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC15",
+    "name": "CC15 Patearoa",
+    "minEast": 1348000,
+    "maxEast": 1372000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC16",
+    "name": "CC16 Kyeburn",
+    "minEast": 1372000,
+    "maxEast": 1396000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC17",
+    "name": "CC17 Morrisons",
+    "minEast": 1396000,
+    "maxEast": 1420000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC18",
+    "name": "CC18 Oamaru",
+    "minEast": 1420000,
+    "maxEast": 1444000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CC19ptCC18",
+    "name": "CC19ptCC18 Cape Wanbrow",
+    "minEast": 1436000,
+    "maxEast": 1460000,
+    "minNorth": 4974000,
+    "maxNorth": 5010000
+  },
+  {
+    "sheet": "CD04ptCD05",
+    "name": "CD04ptCD05 Lake Beattie",
+    "minEast": 1092000,
+    "maxEast": 1116000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD05",
+    "name": "CD05 Dagg Sound",
+    "minEast": 1108000,
+    "maxEast": 1132000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD06",
+    "name": "CD06 Deep Cove",
+    "minEast": 1132000,
+    "maxEast": 1156000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD07",
+    "name": "CD07 Manapouri",
+    "minEast": 1156000,
+    "maxEast": 1180000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD08",
+    "name": "CD08 Te Anau",
+    "minEast": 1180000,
+    "maxEast": 1204000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD09",
+    "name": "CD09 South Mavora Lake",
+    "minEast": 1204000,
+    "maxEast": 1228000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD10",
+    "name": "CD10 Eyre Peak",
+    "minEast": 1228000,
+    "maxEast": 1252000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD11",
+    "name": "CD11 Kingston",
+    "minEast": 1252000,
+    "maxEast": 1276000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD12",
+    "name": "CD12 Piano Flat",
+    "minEast": 1276000,
+    "maxEast": 1300000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD13",
+    "name": "CD13 Roxburgh",
+    "minEast": 1300000,
+    "maxEast": 1324000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD14",
+    "name": "CD14 Lake Onslow",
+    "minEast": 1324000,
+    "maxEast": 1348000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD15",
+    "name": "CD15 Paerau",
+    "minEast": 1348000,
+    "maxEast": 1372000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD16",
+    "name": "CD16 Middlemarch",
+    "minEast": 1372000,
+    "maxEast": 1396000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD17",
+    "name": "CD17 Waikouaiti",
+    "minEast": 1396000,
+    "maxEast": 1420000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CD18",
+    "name": "CD18 Palmerston",
+    "minEast": 1420000,
+    "maxEast": 1444000,
+    "minNorth": 4938000,
+    "maxNorth": 4974000
+  },
+  {
+    "sheet": "CE04",
+    "name": "CE04 Anchor Island",
+    "minEast": 1084000,
+    "maxEast": 1108000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE05",
+    "name": "CE05 Cooper Island",
+    "minEast": 1108000,
+    "maxEast": 1132000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE06",
+    "name": "CE06 Lake Roe",
+    "minEast": 1132000,
+    "maxEast": 1156000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE07",
+    "name": "CE07 Lake Monowai",
+    "minEast": 1156000,
+    "maxEast": 1180000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE08",
+    "name": "CE08 Blackmount",
+    "minEast": 1180000,
+    "maxEast": 1204000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE09",
+    "name": "CE09 Avondale",
+    "minEast": 1204000,
+    "maxEast": 1228000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE10",
+    "name": "CE10 Lumsden",
+    "minEast": 1228000,
+    "maxEast": 1252000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE11",
+    "name": "CE11 Riversdale",
+    "minEast": 1252000,
+    "maxEast": 1276000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE12",
+    "name": "CE12 Black Umbrella",
+    "minEast": 1276000,
+    "maxEast": 1300000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE13",
+    "name": "CE13 Tapanui",
+    "minEast": 1300000,
+    "maxEast": 1324000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE14",
+    "name": "CE14 Lawrence",
+    "minEast": 1324000,
+    "maxEast": 1348000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE15",
+    "name": "CE15 Waitahuna",
+    "minEast": 1348000,
+    "maxEast": 1372000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE16",
+    "name": "CE16 Mosgiel",
+    "minEast": 1372000,
+    "maxEast": 1396000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE17",
+    "name": "CE17 Dunedin",
+    "minEast": 1396000,
+    "maxEast": 1420000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CE18",
+    "name": "CE18 Taiaroa Head",
+    "minEast": 1420000,
+    "maxEast": 1444000,
+    "minNorth": 4902000,
+    "maxNorth": 4938000
+  },
+  {
+    "sheet": "CF04",
+    "name": "CF04 West Cape",
+    "minEast": 1084000,
+    "maxEast": 1108000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF05",
+    "name": "CF05 Long Sound",
+    "minEast": 1108000,
+    "maxEast": 1132000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF06",
+    "name": "CF06 Lake Poteriteri",
+    "minEast": 1132000,
+    "maxEast": 1156000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF07",
+    "name": "CF07 Mary Island",
+    "minEast": 1156000,
+    "maxEast": 1180000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF08",
+    "name": "CF08 Tuatapere",
+    "minEast": 1180000,
+    "maxEast": 1204000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF09",
+    "name": "CF09 Nightcaps",
+    "minEast": 1204000,
+    "maxEast": 1228000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF10",
+    "name": "CF10 Winton",
+    "minEast": 1228000,
+    "maxEast": 1252000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF11",
+    "name": "CF11 Hokonui Hills",
+    "minEast": 1252000,
+    "maxEast": 1276000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF12",
+    "name": "CF12 Gore",
+    "minEast": 1276000,
+    "maxEast": 1300000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF13",
+    "name": "CF13 Clinton",
+    "minEast": 1300000,
+    "maxEast": 1324000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF14",
+    "name": "CF14 Clydevale",
+    "minEast": 1324000,
+    "maxEast": 1348000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF15",
+    "name": "CF15 Milton",
+    "minEast": 1348000,
+    "maxEast": 1372000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CF16",
+    "name": "CF16 Taieri Mouth",
+    "minEast": 1372000,
+    "maxEast": 1396000,
+    "minNorth": 4866000,
+    "maxNorth": 4902000
+  },
+  {
+    "sheet": "CG05",
+    "name": "CG05 Green Islets",
+    "minEast": 1108000,
+    "maxEast": 1132000,
+    "minNorth": 4830000,
+    "maxNorth": 4866000
+  },
+  {
+    "sheet": "CG06",
+    "name": "CG06 Long Point",
+    "minEast": 1132000,
+    "maxEast": 1156000,
+    "minNorth": 4830000,
+    "maxNorth": 4866000
+  },
+  {
+    "sheet": "CG07ptCF07",
+    "name": "CG07ptCF07 Sand Hill Point",
+    "minEast": 1156000,
+    "maxEast": 1180000,
+    "minNorth": 4842000,
+    "maxNorth": 4878000
+  },
+  {
+    "sheet": "CG08",
+    "name": "CG08 Orepuki",
+    "minEast": 1180000,
+    "maxEast": 1204000,
+    "minNorth": 4830000,
+    "maxNorth": 4866000
+  },
+  {
+    "sheet": "CG09",
+    "name": "CG09 Riverton / Aparima",
+    "minEast": 1204000,
+    "maxEast": 1228000,
+    "minNorth": 4830000,
+    "maxNorth": 4866000
+  },
+  {
+    "sheet": "CG10",
+    "name": "CG10 Invercargill",
+    "minEast": 1228000,
+    "maxEast": 1252000,
+    "minNorth": 4830000,
+    "maxNorth": 4866000
+  },
+  {
+    "sheet": "CG11",
+    "name": "CG11 Dacre",
+    "minEast": 1252000,
+    "maxEast": 1276000,
+    "minNorth": 4830000,
+    "maxNorth": 4866000
+  },
+  {
+    "sheet": "CG12",
+    "name": "CG12 Wyndham",
+    "minEast": 1276000,
+    "maxEast": 1300000,
+    "minNorth": 4830000,
+    "maxNorth": 4866000
+  },
+  {
+    "sheet": "CG13",
+    "name": "CG13 Chaslands",
+    "minEast": 1300000,
+    "maxEast": 1324000,
+    "minNorth": 4830000,
+    "maxNorth": 4866000
+  },
+  {
+    "sheet": "CG14",
+    "name": "CG14 Owaka",
+    "minEast": 1324000,
+    "maxEast": 1348000,
+    "minNorth": 4830000,
+    "maxNorth": 4866000
+  },
+  {
+    "sheet": "CG15",
+    "name": "CG15 Nugget Point",
+    "minEast": 1348000,
+    "maxEast": 1372000,
+    "minNorth": 4830000,
+    "maxNorth": 4866000
+  },
+  {
+    "sheet": "CH05/CH06",
+    "name": "CH05/CH06 Solander Island (Hautere)",
+    "minEast": 1120000,
+    "maxEast": 1144000,
+    "minNorth": 4794000,
+    "maxNorth": 4830000
+  },
+  {
+    "sheet": "CH08",
+    "name": "CH08 Codfish Island (Whenuahou)",
+    "minEast": 1180000,
+    "maxEast": 1204000,
+    "minNorth": 4794000,
+    "maxNorth": 4830000
+  },
+  {
+    "sheet": "CH09",
+    "name": "CH09 Mount Anglem / Hananui",
+    "minEast": 1204000,
+    "maxEast": 1228000,
+    "minNorth": 4794000,
+    "maxNorth": 4830000
+  },
+  {
+    "sheet": "CH10",
+    "name": "CH10 Foveaux Strait",
+    "minEast": 1228000,
+    "maxEast": 1252000,
+    "minNorth": 4794000,
+    "maxNorth": 4830000
+  },
+  {
+    "sheet": "CH11",
+    "name": "CH11 Ruapuke Island",
+    "minEast": 1252000,
+    "maxEast": 1276000,
+    "minNorth": 4794000,
+    "maxNorth": 4830000
+  },
+  {
+    "sheet": "CH12",
+    "name": "CH12 Waipapa Point",
+    "minEast": 1276000,
+    "maxEast": 1300000,
+    "minNorth": 4794000,
+    "maxNorth": 4830000
+  },
+  {
+    "sheet": "CH13",
+    "name": "CH13 Curio Bay",
+    "minEast": 1300000,
+    "maxEast": 1324000,
+    "minNorth": 4794000,
+    "maxNorth": 4830000
+  },
+  {
+    "sheet": "CJ07/CK07",
+    "name": "CJ07/CK07 Putauhina Island",
+    "minEast": 1156000,
+    "maxEast": 1180000,
+    "minNorth": 4740000,
+    "maxNorth": 4776000
+  },
+  {
+    "sheet": "CJ08",
+    "name": "CJ08 Doughboy Bay",
+    "minEast": 1180000,
+    "maxEast": 1204000,
+    "minNorth": 4758000,
+    "maxNorth": 4794000
+  },
+  {
+    "sheet": "CJ09",
+    "name": "CJ09 Mount Allen",
+    "minEast": 1204000,
+    "maxEast": 1228000,
+    "minNorth": 4758000,
+    "maxNorth": 4794000
+  },
+  {
+    "sheet": "CJ10",
+    "name": "CJ10 Port Adventure",
+    "minEast": 1228000,
+    "maxEast": 1252000,
+    "minNorth": 4758000,
+    "maxNorth": 4794000
+  },
+  {
+    "sheet": "CK08",
+    "name": "CK08 South Cape / Whiore",
+    "minEast": 1180000,
+    "maxEast": 1204000,
+    "minNorth": 4722000,
+    "maxNorth": 4758000
+  }
+]
