@@ -1,4 +1,4 @@
-const CACHE_NAME = 'nz-coordinate-converter-v1';
+const CACHE_NAME = 'nz-coordinate-converter-v2';
 const ASSETS_TO_CACHE = [
   '.',
   'index.html',
@@ -13,6 +13,8 @@ const ASSETS_TO_CACHE = [
 ];
 
 self.addEventListener('install', event => {
+  // Activate this service worker immediately once installed
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS_TO_CACHE))
   );
@@ -24,6 +26,8 @@ self.addEventListener('activate', event => {
       keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))
     ))
   );
+  // Take control of uncontrolled clients immediately
+  self.clients.claim();
 });
 
 self.addEventListener('fetch', event => {
