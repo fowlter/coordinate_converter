@@ -6,7 +6,10 @@ const ASSETS_TO_CACHE = [
   'style.css',
   'proj4.js',
   'topo50.json',
-  'manifest.json'
+  'manifest.json',
+  'icon-192.png',
+  'icon-512.png',
+  'icon.svg'
 ];
 
 self.addEventListener('install', event => {
