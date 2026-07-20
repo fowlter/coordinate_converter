@@ -2,21 +2,21 @@
   "name": "NZ Coordinate Converter",
   "short_name": "NZCoords",
   "description": "Convert NZ latitude/longitude, NZTM and Topo50 grid references in a PWA.",
-  "start_url": ".",
+  "start_url": "./",
   "display": "standalone",
-  "scope": ".",
+  "scope": "./",
   "theme_color": "#222222",
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "icon.svg",
+      "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml"
+      "type": "image/png"
     },
     {
-      "src": "icon.svg",
+      "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml"
+      "type": "image/png"
     }
   ]
 }
