@@ -14,18 +14,29 @@ let displayMode = "NZTM";
 
 let topoSheets = [];
 let topoSheetsLoaded = false;
+let deferredInstallPrompt = null;
 
 async function loadTopo50Data() {
+    const topo50Url = new URL('topo50.json', location.href).href;
+    document.getElementById('detailText').textContent = 'Loading Topo50 data...';
+
     try {
-        const response = await fetch('topo50.json');
+        const response = await fetch(topo50Url);
         if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
+            const message = `Topo50 data fetch failed: HTTP ${response.status} (${topo50Url})`;
+            topoSheetsLoaded = false;
+            document.getElementById('detailText').textContent = message;
+            console.warn(message);
+            return;
         }
         topoSheets = await response.json();
         topoSheetsLoaded = true;
+        document.getElementById('detailText').textContent = 'Topo50 data loaded successfully.';
     } catch (error) {
         topoSheetsLoaded = false;
-        console.warn('Failed to load topo50.json:', error);
+        const message = `Failed to load topo50.json from ${topo50Url}: ${error.message}`;
+        document.getElementById('detailText').textContent = message;
+        console.warn(message, error);
     }
 }
 
@@ -406,6 +417,45 @@ function displayTopo50() {
     document.getElementById("result2").value = `${eastText} ${northText}`;
     document.getElementById("detailText").textContent =
         `100km block origin: E=${blockOriginEast}, N=${blockOriginNorth}. Local metres: E=${localEast.toFixed(3)}, N=${localNorth.toFixed(3)}.`;
+}
+
+window.addEventListener('beforeinstallprompt', event => {
+    event.preventDefault();
+    deferredInstallPrompt = event;
+    const installButton = document.getElementById('installButton');
+    if (installButton) {
+        installButton.style.display = 'inline-block';
+    }
+});
+
+window.addEventListener('appinstalled', () => {
+    deferredInstallPrompt = null;
+    const installButton = document.getElementById('installButton');
+    if (installButton) {
+        installButton.style.display = 'none';
+    }
+    document.getElementById('detailText').textContent = 'App installed.';
+});
+
+function promptInstall() {
+    if (!deferredInstallPrompt) {
+        alert('Install prompt not available yet. Please visit the page again or use your browser menu to install.');
+        return;
+    }
+
+    deferredInstallPrompt.prompt();
+    deferredInstallPrompt.userChoice.then(choiceResult => {
+        if (choiceResult.outcome === 'accepted') {
+            document.getElementById('detailText').textContent = 'Thanks for installing the app!';
+        } else {
+            document.getElementById('detailText').textContent = 'Install dismissed. You can install later from the browser menu.';
+        }
+        deferredInstallPrompt = null;
+        const installButton = document.getElementById('installButton');
+        if (installButton) {
+            installButton.style.display = 'none';
+        }
+    });
 }
 
 window.addEventListener('load', async () => {
