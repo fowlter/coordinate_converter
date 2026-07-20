@@ -425,6 +425,7 @@ window.addEventListener('beforeinstallprompt', event => {
     const installButton = document.getElementById('installButton');
     if (installButton) {
         installButton.style.display = 'inline-block';
+        installButton.textContent = 'Install App';
     }
 });
 
@@ -439,7 +440,7 @@ window.addEventListener('appinstalled', () => {
 
 function promptInstall() {
     if (!deferredInstallPrompt) {
-        alert('Install prompt not available yet. Please visit the page again or use your browser menu to install.');
+        alert('Install prompt has not fired yet. Use your browser menu and choose "Add to Home screen" or return to this page after interacting with it.');
         return;
     }
 
