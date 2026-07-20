@@ -463,8 +463,40 @@ window.addEventListener('load', async () => {
     updateDisplay();
 
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js').catch(error => {
-            console.warn('Service worker registration failed:', error);
-        });
+        navigator.serviceWorker.register('service-worker.js')
+            .then(reg => {
+                console.log('Service worker registered:', reg);
+                setTimeout(checkInstallStatus, 500);
+            })
+            .catch(error => {
+                console.warn('Service worker registration failed:', error);
+                setTimeout(checkInstallStatus, 500);
+            });
     }
 });
+
+async function checkInstallStatus() {
+    const statusEl = document.getElementById('installStatus');
+    if (!statusEl) return;
+    try {
+        const manifestUrl = new URL('manifest.json', location.href).href;
+        const r = await fetch(manifestUrl, {cache: 'no-store'});
+        if (!r.ok) {
+            statusEl.textContent = `Manifest fetch failed: HTTP ${r.status}`;
+            return;
+        }
+        const m = await r.json();
+        const iconsOk = Array.isArray(m.icons) && m.icons.length > 0;
+        const swControlled = !!navigator.serviceWorker && !!navigator.serviceWorker.controller;
+        const pwaHints = [];
+        if (!iconsOk) pwaHints.push('manifest has no icons');
+        if (!swControlled) pwaHints.push('service worker not controlling page');
+        if (!deferredInstallPrompt) pwaHints.push('browser has not fired install prompt yet');
+        statusEl.textContent = `PWA status: icons=${iconsOk}, swControlled=${swControlled}` + (pwaHints.length ? ' — ' + pwaHints.join('; ') : ' — eligible');
+    } catch (e) {
+        document.getElementById('installStatus').textContent = 'Install status check failed: ' + e.message;
+    }
+}
+
+// run a short check shortly after load and after service worker registration
+window.addEventListener('load', () => setTimeout(checkInstallStatus, 1000));
