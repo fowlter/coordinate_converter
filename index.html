@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ Coordinate Converter</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<h2>Latitude / Longitude → NZTM2000</h2>
+
+<button id="gpsButton" onclick="inputCurrentGPS()">Use Current GPS Coordinates</button><br><br>
+
+<h3>Top Input</h3>
+
+Latitude<br>
+<input id="lat"><br><br>
+
+Longitude<br>
+<input id="lon"><br><br>
+
+<button id="convertTopButton" onclick="convertTopToBottom()">Convert Top → Bottom</button>
+<button id="convertBottomButton" onclick="convertBottomToTop()">Convert Bottom → Top</button><br><br>
+
+<h3>Bottom Input</h3>
+
+<span id="resultLabel1">Easting:</span>
+<input id="result1"><br><br>
+
+<span id="resultLabel2">Northing:</span>
+<input id="result2"><br><br>
+
+<button id="displayButton" onclick="toggleDisplay()">Display: NZTM</button>
+
+<div id="detailText" style="font-size:0.9em; color:#444;"></div>
+<script src="proj4.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
