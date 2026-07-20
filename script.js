@@ -16,11 +16,18 @@ let topoSheets = [];
 let topoSheetsLoaded = false;
 let deferredInstallPrompt = null;
 
+function isIos() {
+    const ua = window.navigator.userAgent || '';
+    const platform = window.navigator.platform || '';
+    const isIosUa = /iphone|ipad|ipod/i.test(ua);
+    const isIosPlatform = /iphone|ipad|ipod/i.test(platform);
+    const isTouchMac = platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+    return isIosUa || isIosPlatform || isTouchMac;
+}
+
 function isIosSafari() {
     const ua = window.navigator.userAgent || '';
-    const isIos = /iphone|ipad|ipod/i.test(ua);
-    const isSafari = /safari/i.test(ua) && !/crios|fxios|edgios|opios/i.test(ua);
-    return isIos && isSafari;
+    return /safari/i.test(ua) && !/crios|fxios|edgios|opios/i.test(ua);
 }
 
 function getIosInstallInstructions() {
@@ -450,14 +457,14 @@ window.addEventListener('appinstalled', () => {
 });
 
 function promptInstall() {
-    if (isIosSafari()) {
+    if (isIos()) {
         alert(getIosInstallInstructions());
         document.getElementById('detailText').textContent = getIosInstallInstructions();
         return;
     }
 
     if (!deferredInstallPrompt) {
-        alert('Install prompt has not fired yet. Use your browser menu and choose "Add to Home screen" or return to this page after interacting with it.');
+        alert('Install prompt has not fired yet. In Chrome, use your browser menu and choose "Add to Home screen" or return to this page after interacting with it. In Safari press Share, scroll down and click Add to Home Screen');
         return;
     }
 
@@ -509,8 +516,8 @@ async function checkInstallStatus() {
         const pwaHints = [];
         if (!iconsOk) pwaHints.push('manifest has no icons');
         if (!swControlled) pwaHints.push('service worker not controlling page');
-        if (isIosSafari()) {
-            pwaHints.push('iOS Safari detected — use Share → Add to Home Screen');
+        if (isIos()) {
+            pwaHints.push('iOS detected — use Share → Add to Home Screen');
         } else if (!deferredInstallPrompt) {
             pwaHints.push('browser has not fired install prompt yet');
         }
