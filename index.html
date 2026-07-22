@@ -20,16 +20,19 @@
     <section class="input-panel">
         <h3>Top Input</h3>
 
-        <label for="lat" id="latLabel">Latitude:</label>
+        <label for="lat" id="latLabel">Latitude (N/S):</label>
+        <div class="input-example" id="latExample">Example: -39.283028</div>
         <input id="lat">
 
-        <label for="lon" id="lonLabel">Longitude:</label>
+        <label for="lon" id="lonLabel">Longitude (E/W):</label>
+        <div class="input-example" id="lonExample">Example: 176.379317</div>
         <input id="lon">
 
         <div class="mode-switch" aria-label="Top input format switch">
             <button id="topModeDd" onclick="setTopDisplayMode('DD')">Decimal Degrees</button>
             <button id="topModeDms" onclick="setTopDisplayMode('DMS')">Degrees Minutes Seconds</button>
         </div>
+        <div class="sync-note" id="topSyncNote" aria-live="polite"></div>
     </section>
 
     <div class="button-row">
@@ -41,15 +44,18 @@
         <h3>Bottom Input</h3>
 
         <label for="result1" id="resultLabel1">Easting:</label>
+        <div class="input-example" id="result1Example">Example: 1891486</div>
         <input id="result1">
 
         <label for="result2" id="resultLabel2">Northing:</label>
+        <div class="input-example" id="result2Example">Example: 5646369</div>
         <input id="result2">
 
         <div class="mode-switch" aria-label="Bottom input format switch">
             <button id="bottomModeNztm" onclick="setBottomDisplayMode('NZTM')">NZTM</button>
             <button id="bottomModeTopo50" onclick="setBottomDisplayMode('TOPO50')">NZTopo50</button>
         </div>
+        <div class="sync-note" id="bottomSyncNote" aria-live="polite"></div>
     </section>
 
     <div id="detailText"></div>
