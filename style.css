@@ -41,6 +41,18 @@ label {
 	font-weight: 600;
 }
 
+.input-example {
+	margin-top: -0.15rem;
+	font-size: 0.82rem;
+	color: #5b6773;
+}
+
+.sync-note {
+	min-height: 1rem;
+	font-size: 0.82rem;
+	color: #a04a00;
+}
+
 input,
 button {
 	min-height: 2.25rem;
@@ -68,6 +80,9 @@ button:hover {
 
 .mode-switch {
 	display: inline-flex;
+	justify-self: start;
+	width: fit-content;
+	max-width: 100%;
 	border: 1px solid #b8c0c8;
 	border-radius: 8px;
 	overflow: hidden;
@@ -75,6 +90,8 @@ button:hover {
 
 .mode-switch button {
 	border: 0;
+	flex: 0 0 auto;
+	white-space: nowrap;
 	background: #f3f5f7;
 	color: #1f2933;
 	border-radius: 0;
