@@ -17,6 +17,26 @@ let topoSheets = [];
 let topoSheetsLoaded = false;
 let deferredInstallPrompt = null;
 let appInstalled = false;
+const APP_VERSION = '4';
+
+const EXAMPLES = {
+    DD: {
+        lat: 'Example: -39.283028',
+        lon: 'Example: 176.379317'
+    },
+    DMS: {
+        lat: 'Example: 39 16 58.9 S',
+        lon: 'Example: 176 22 45.54 E'
+    },
+    NZTM: {
+        result1: 'Example: 1891486',
+        result2: 'Example: 5646369'
+    },
+    TOPO50: {
+        result1: 'Example: BJ37',
+        result2: 'Example: 914 463'
+    }
+};
 
 function isIos() {
     const ua = window.navigator.userAgent || '';
@@ -328,24 +348,51 @@ function updateTopDisplay() {
         dmsButton.setAttribute('aria-pressed', topDisplayMode === "DMS" ? 'true' : 'false');
     }
     if (latLabel) {
-        latLabel.textContent = topDisplayMode === "DD" ? "Latitude:" : "Latitude (DMS):";
+        latLabel.textContent = "Latitude (N/S):";
     }
     if (lonLabel) {
-        lonLabel.textContent = topDisplayMode === "DD" ? "Longitude:" : "Longitude (DMS):";
+        lonLabel.textContent = "Longitude (E/W):";
     }
+
+    const latExample = document.getElementById("latExample");
+    const lonExample = document.getElementById("lonExample");
+    if (latExample && lonExample) {
+        latExample.textContent = EXAMPLES[topDisplayMode].lat;
+        lonExample.textContent = EXAMPLES[topDisplayMode].lon;
+    }
+}
+
+function setTopSyncWarning(message) {
+    const note = document.getElementById('topSyncNote');
+    if (!note) return;
+    note.textContent = message || '';
+}
+
+function setBottomSyncWarning(message) {
+    const note = document.getElementById('bottomSyncNote');
+    if (!note) return;
+    note.textContent = message || '';
 }
 
 function setTopDisplayMode(mode) {
     if (mode !== "DD" && mode !== "DMS") return;
 
     const saved = saveTopInputAsCurrentCoordinate();
+    const topBothBlank = !document.getElementById("lat").value.trim() && !document.getElementById("lon").value.trim();
     topDisplayMode = mode;
     updateTopDisplay();
-    // Only rewrite field values when we successfully parsed the current inputs.
-    // This keeps blank or in-progress values editable while still allowing mode switch.
     if (saved) {
+        setTopSyncWarning('');
         updateLatLonInputs();
+        return;
     }
+
+    if (topBothBlank) {
+        setTopSyncWarning('');
+        return;
+    }
+
+    setTopSyncWarning('Invalid value, top fields might not be synced.');
 }
 
 function toggleTopDisplay() {
@@ -414,6 +461,8 @@ function convertTopToBottom() {
         north: roundToMeter(result[1])
     };
 
+    setTopSyncWarning('');
+    setBottomSyncWarning('');
     updateLatLonInputs();
     updateDisplay();
 }
@@ -442,6 +491,8 @@ function convertBottomToTop() {
             east: roundToMeter(eastParsed.value),
             north: roundToMeter(northParsed.value)
         };
+        setBottomSyncWarning('');
+        setTopSyncWarning('');
         updateLatLonInputs();
         updateDisplay();
         return;
@@ -488,6 +539,8 @@ function convertBottomToTop() {
         east: east,
         north: north
     };
+    setBottomSyncWarning('');
+    setTopSyncWarning('');
     updateLatLonInputs();
     updateDisplay();
 }
@@ -581,16 +634,31 @@ function resolveTopo50GridToNzTm(sheet, grid) {
 function setBottomDisplayMode(mode) {
     if (mode !== "NZTM" && mode !== "TOPO50") return;
 
+    const saved = saveBottomInputAsCurrentCoordinate();
+    const bottomBothBlank = !document.getElementById("result1").value.trim() && !document.getElementById("result2").value.trim();
     displayMode = mode;
-    updateDisplay();
-    updateLatLonInputs();
+    if (saved) {
+        setBottomSyncWarning('');
+        updateDisplay();
+        updateLatLonInputs();
+        return;
+    }
+
+    if (bottomBothBlank) {
+        setBottomSyncWarning('');
+        updateDisplay(false);
+        return;
+    }
+
+    setBottomSyncWarning('Invalid value, bottom fields might not be synced.');
+    updateDisplay(false);
 }
 
 function toggleDisplay() {
     setBottomDisplayMode(displayMode == "NZTM" ? "TOPO50" : "NZTM");
 }
 
-function updateDisplay() {
+function updateDisplay(syncValues = true) {
     const nztmButton = document.getElementById("bottomModeNztm");
     const topoButton = document.getElementById("bottomModeTopo50");
     if (nztmButton && topoButton) {
@@ -600,9 +668,17 @@ function updateDisplay() {
         topoButton.setAttribute('aria-pressed', displayMode === "TOPO50" ? 'true' : 'false');
     }
 
+    const result1Example = document.getElementById("result1Example");
+    const result2Example = document.getElementById("result2Example");
+    if (result1Example && result2Example) {
+        result1Example.textContent = EXAMPLES[displayMode].result1;
+        result2Example.textContent = EXAMPLES[displayMode].result2;
+    }
+
     if (displayMode == "NZTM") {
         document.getElementById("resultLabel1").textContent = "Easting:";
         document.getElementById("resultLabel2").textContent = "Northing:";
+        if (!syncValues) return;
         document.getElementById("result1").value =
             currentCoordinate.east !== null ? formatNzTm(currentCoordinate.east) : "";
         document.getElementById("result2").value =
@@ -610,6 +686,7 @@ function updateDisplay() {
     } else {
         document.getElementById("resultLabel1").textContent = "Sheet:";
         document.getElementById("resultLabel2").textContent = "Grid:";
+        if (!syncValues) return;
         displayTopo50();
     }
 }
@@ -708,6 +785,8 @@ window.addEventListener('load', async () => {
     await loadTopo50Data();
     updateTopDisplay();
     updateDisplay();
+    setTopSyncWarning('');
+    setBottomSyncWarning('');
 
     const installButton = document.getElementById('installButton');
     if (installButton && appInstalled) {
@@ -715,7 +794,7 @@ window.addEventListener('load', async () => {
     }
 
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
+        navigator.serviceWorker.register(`service-worker.js?v=${APP_VERSION}`)
             .then(reg => {
                 console.log('Service worker registered:', reg);
                 setTimeout(checkInstallStatus, 500);
@@ -731,26 +810,24 @@ async function checkInstallStatus() {
     const statusEl = document.getElementById('installStatus');
     if (!statusEl) return;
     try {
-        const manifestUrl = new URL('manifest.json', location.href).href;
-        const r = await fetch(manifestUrl, {cache: 'no-store'});
-        if (!r.ok) {
-            statusEl.textContent = `Manifest fetch failed: HTTP ${r.status}`;
+        if (isStandaloneMode() || appInstalled) {
+            statusEl.textContent = 'App installed. Open it from your Home Screen or app launcher.';
             return;
         }
-        const m = await r.json();
-        const iconsOk = Array.isArray(m.icons) && m.icons.length > 0;
-        const swControlled = !!navigator.serviceWorker && !!navigator.serviceWorker.controller;
-        const pwaHints = [];
-        if (!iconsOk) pwaHints.push('manifest has no icons');
-        if (!swControlled) pwaHints.push('service worker not controlling page');
-        if (isIos()) {
-            pwaHints.push('iOS detected — use Share → Add to Home Screen');
-        } else if (!deferredInstallPrompt) {
-            pwaHints.push('browser has not fired install prompt yet');
+
+        if (deferredInstallPrompt) {
+            statusEl.textContent = 'Ready to install. Tap Install App.';
+            return;
         }
-        statusEl.textContent = `PWA status: icons=${iconsOk}, swControlled=${swControlled}` + (pwaHints.length ? ' — ' + pwaHints.join('; ') : ' — eligible');
+
+        if (isIos()) {
+            statusEl.textContent = 'On iPhone/iPad, use Share then Add to Home Screen.';
+            return;
+        }
+
+        statusEl.textContent = 'Use your browser menu to install this app.';
     } catch (e) {
-        document.getElementById('installStatus').textContent = 'Install status check failed: ' + e.message;
+        document.getElementById('installStatus').textContent = 'Install help unavailable right now.';
     }
 }
 
