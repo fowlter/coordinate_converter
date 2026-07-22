@@ -11,10 +11,12 @@ let currentCoordinate = {
 };
 
 let displayMode = "NZTM";
+let topDisplayMode = "DD";
 
 let topoSheets = [];
 let topoSheetsLoaded = false;
 let deferredInstallPrompt = null;
+let appInstalled = false;
 
 function isIos() {
     const ua = window.navigator.userAgent || '';
@@ -30,8 +32,65 @@ function isIosSafari() {
     return /safari/i.test(ua) && !/crios|fxios|edgios|opios/i.test(ua);
 }
 
+function isAndroid() {
+    const ua = window.navigator.userAgent || '';
+    return /android/i.test(ua);
+}
+
+function isDesktop() {
+    return !isIos() && !isAndroid();
+}
+
+function isChromeFamily() {
+    const ua = window.navigator.userAgent || '';
+    return /chrome|crios|chromium|edg|edgios|opr|opera|samsungbrowser/i.test(ua) && !/firefox|fxios/i.test(ua);
+}
+
+function isFirefoxFamily() {
+    const ua = window.navigator.userAgent || '';
+    return /firefox|fxios/i.test(ua);
+}
+
+function isStandaloneMode() {
+    const standaloneMedia = window.matchMedia && window.matchMedia('(display-mode: standalone)').matches;
+    const iosStandalone = typeof navigator.standalone === 'boolean' && navigator.standalone;
+    return !!standaloneMedia || !!iosStandalone;
+}
+
 function getIosInstallInstructions() {
     return 'On iPhone Safari, install from the browser menu: tap the Share icon and choose "Add to Home Screen".';
+}
+
+function getInstallInstructions() {
+    if (isStandaloneMode() || appInstalled) {
+        return 'This app is already installed on this device. Open it from your Home Screen or app launcher.';
+    }
+
+    if (isIos()) {
+        if (isIosSafari()) {
+            return 'On iPhone/iPad Safari: tap Share, then choose "Add to Home Screen".';
+        }
+        return 'On iPhone/iPad: open this site in Safari, then tap Share and choose "Add to Home Screen".';
+    }
+
+    if (isAndroid()) {
+        if (isFirefoxFamily()) {
+            return 'On Android Firefox: open the browser menu and choose "Add to Home screen".';
+        }
+        return 'On Android: open the browser menu and choose "Install app" or "Add to Home screen".';
+    }
+
+    if (isDesktop()) {
+        if (isFirefoxFamily()) {
+            return 'On desktop Firefox: install support is limited; use the browser menu/bookmark options, or use Chrome/Edge for installable app behavior.';
+        }
+        if (isChromeFamily()) {
+            return 'On desktop Chrome/Edge: click the install icon in the address bar, or open the browser menu and choose "Install app".';
+        }
+        return 'On desktop: open the browser menu and look for "Install app" or "Add to Applications".';
+    }
+
+    return 'Use your browser menu to install this app to your Home Screen or app list.';
 }
 
 async function loadTopo50Data() {
@@ -49,7 +108,7 @@ async function loadTopo50Data() {
         }
         topoSheets = await response.json();
         topoSheetsLoaded = true;
-        document.getElementById('detailText').textContent = 'Topo50 data loaded successfully.';
+        document.getElementById('detailText').textContent = '';
     } catch (error) {
         topoSheetsLoaded = false;
         const message = `Failed to load topo50.json from ${topo50Url}: ${error.message}`;
@@ -77,6 +136,14 @@ function formatNumber(value, decimals) {
     return formatted;
 }
 
+function roundToMeter(value) {
+    return Math.round(value);
+}
+
+function formatNzTm(value) {
+    return formatNumber(roundToMeter(value), 0);
+}
+
 function formatNumberFromInput(value, inputText, defaultDecimals) {
     const parsed = parseNumberWithPrecision(inputText || '');
     if (parsed) {
@@ -88,6 +155,105 @@ function formatNumberFromInput(value, inputText, defaultDecimals) {
             : formatNumber(value, defaultDecimals || 0);
     }
     return formatNumber(value, defaultDecimals || 0);
+}
+
+function parseDmsCoordinate(text, isLat) {
+    if (!text) return null;
+    const upper = text.trim().toUpperCase();
+    if (!upper) return null;
+
+    const hemisphereMatches = [];
+    const hemisphereRegex = /(?:^|[^A-Z])(N|S|E|W)(?=$|[^A-Z])/g;
+    let hemisphereMatch;
+    while ((hemisphereMatch = hemisphereRegex.exec(upper)) !== null) {
+        hemisphereMatches.push(hemisphereMatch[1]);
+    }
+    const hasSouthOrWest = hemisphereMatches.some(h => h === 'S' || h === 'W');
+    const hasNorthOrEast = hemisphereMatches.some(h => h === 'N' || h === 'E');
+    const hasLeadingMinus = /^\s*-/.test(upper);
+    const firstNumber = upper.match(/[-+]?\d+(?:\.\d+)?/);
+    const hasNegativeDegree = !!(firstNumber && firstNumber[0].startsWith('-'));
+
+    const cleaned = upper
+        .replace(/[NSEW]/g, ' ')
+        .replace(/[A-Z]/g, ' ')
+        .replace(/[+\-]/g, ' ')
+        .replace(/[^0-9.\s]+/g, ' ')
+        .trim();
+
+    if (!cleaned) return null;
+    const parts = cleaned.split(/\s+/).filter(Boolean);
+    if (parts.length === 0 || parts.length > 3) return null;
+
+    const deg = Number(parts[0]);
+    const min = parts.length > 1 ? Number(parts[1]) : 0;
+    const sec = parts.length > 2 ? Number(parts[2]) : 0;
+
+    if (!Number.isFinite(deg) || !Number.isFinite(min) || !Number.isFinite(sec)) return null;
+    if (deg < 0 || min < 0 || sec < 0) return null;
+    if (min >= 60 || sec >= 60) return null;
+
+    let sign = 1;
+    if (hasSouthOrWest || hasLeadingMinus || hasNegativeDegree) sign = -1;
+    if (hasNorthOrEast && !hasSouthOrWest && !hasLeadingMinus && !hasNegativeDegree) sign = 1;
+
+    const value = sign * (deg + min / 60 + sec / 3600);
+    const maxAbs = isLat ? 90 : 180;
+    if (Math.abs(value) > maxAbs) return null;
+    return value;
+}
+
+function parseAngleInput(text, isLat) {
+    const parsed = parseNumberWithPrecision(text || '');
+    if (parsed) {
+        const maxAbs = isLat ? 90 : 180;
+        if (Math.abs(parsed.value) > maxAbs) return null;
+        return parsed.value;
+    }
+    return parseDmsCoordinate(text || '', isLat);
+}
+
+function formatDms(value, isLat) {
+    const hemisphere = value < 0 ? (isLat ? 'S' : 'W') : (isLat ? 'N' : 'E');
+    const absValue = Math.abs(value);
+    let degrees = Math.floor(absValue);
+    const minutesFloat = (absValue - degrees) * 60;
+    let minutes = Math.floor(minutesFloat);
+    let seconds = (minutesFloat - minutes) * 60;
+
+    seconds = Math.round(seconds * 100) / 100;
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes += 1;
+    }
+    if (minutes >= 60) {
+        minutes = 0;
+        degrees += 1;
+    }
+
+    return `${degrees}° ${minutes}' ${formatNumber(seconds, 2)}\" ${hemisphere}`;
+}
+
+function saveTopInputAsCurrentCoordinate() {
+    const latRaw = document.getElementById("lat").value.trim();
+    const lonRaw = document.getElementById("lon").value.trim();
+
+    if (!latRaw && !lonRaw) {
+        return currentCoordinate.lat !== null && currentCoordinate.lon !== null;
+    }
+
+    const lat = parseAngleInput(latRaw, true);
+    const lon = parseAngleInput(lonRaw, false);
+    if (lat === null || lon === null) return false;
+
+    const result = proj4("EPSG:4326", "EPSG:2193", [lon, lat]);
+    currentCoordinate = {
+        lat,
+        lon,
+        east: roundToMeter(result[0]),
+        north: roundToMeter(result[1])
+    };
+    return true;
 }
 
 function saveBottomInputAsCurrentCoordinate() {
@@ -110,8 +276,8 @@ function saveBottomInputAsCurrentCoordinate() {
         currentCoordinate = {
             lat: result[1],
             lon: result[0],
-            east: east.value,
-            north: north.value
+            east: roundToMeter(east.value),
+            north: roundToMeter(north.value)
         };
         return true;
     }
@@ -140,8 +306,50 @@ function saveBottomInputAsCurrentCoordinate() {
 
 function updateLatLonInputs() {
     if (currentCoordinate.lat === null || currentCoordinate.lon === null) return;
-    document.getElementById("lat").value = formatNumber(currentCoordinate.lat, 6);
-    document.getElementById("lon").value = formatNumber(currentCoordinate.lon, 6);
+    if (topDisplayMode === "DD") {
+        document.getElementById("lat").value = formatNumber(currentCoordinate.lat, 6);
+        document.getElementById("lon").value = formatNumber(currentCoordinate.lon, 6);
+        return;
+    }
+    document.getElementById("lat").value = formatDms(currentCoordinate.lat, true);
+    document.getElementById("lon").value = formatDms(currentCoordinate.lon, false);
+}
+
+function updateTopDisplay() {
+    const ddButton = document.getElementById("topModeDd");
+    const dmsButton = document.getElementById("topModeDms");
+    const latLabel = document.getElementById("latLabel");
+    const lonLabel = document.getElementById("lonLabel");
+
+    if (ddButton && dmsButton) {
+        ddButton.classList.toggle('active', topDisplayMode === "DD");
+        dmsButton.classList.toggle('active', topDisplayMode === "DMS");
+        ddButton.setAttribute('aria-pressed', topDisplayMode === "DD" ? 'true' : 'false');
+        dmsButton.setAttribute('aria-pressed', topDisplayMode === "DMS" ? 'true' : 'false');
+    }
+    if (latLabel) {
+        latLabel.textContent = topDisplayMode === "DD" ? "Latitude:" : "Latitude (DMS):";
+    }
+    if (lonLabel) {
+        lonLabel.textContent = topDisplayMode === "DD" ? "Longitude:" : "Longitude (DMS):";
+    }
+}
+
+function setTopDisplayMode(mode) {
+    if (mode !== "DD" && mode !== "DMS") return;
+
+    const saved = saveTopInputAsCurrentCoordinate();
+    topDisplayMode = mode;
+    updateTopDisplay();
+    // Only rewrite field values when we successfully parsed the current inputs.
+    // This keeps blank or in-progress values editable while still allowing mode switch.
+    if (saved) {
+        updateLatLonInputs();
+    }
+}
+
+function toggleTopDisplay() {
+    setTopDisplayMode(topDisplayMode === "DD" ? "DMS" : "DD");
 }
 
 function inputCurrentGPS() {
@@ -151,8 +359,9 @@ function inputCurrentGPS() {
     }
 
     navigator.geolocation.getCurrentPosition(position => {
-        document.getElementById('lat').value = formatNumber(position.coords.latitude, 6);
-        document.getElementById('lon').value = formatNumber(position.coords.longitude, 6);
+        currentCoordinate.lat = position.coords.latitude;
+        currentCoordinate.lon = position.coords.longitude;
+        updateLatLonInputs();
         document.getElementById('detailText').textContent = 'GPS coordinates loaded successfully.';
     }, error => {
         let message = 'Unable to retrieve GPS location.';
@@ -184,10 +393,10 @@ function inputCurrentGPS() {
 function convertTopToBottom() {
     const latText = document.getElementById("lat").value.trim();
     const lonText = document.getElementById("lon").value.trim();
-    const latParsed = parseNumberWithPrecision(latText);
-    const lonParsed = parseNumberWithPrecision(lonText);
+    const lat = parseAngleInput(latText, true);
+    const lon = parseAngleInput(lonText, false);
 
-    if (!latParsed || !lonParsed) {
+    if (lat === null || lon === null) {
         alert('Please enter valid latitude and longitude values.');
         return;
     }
@@ -195,14 +404,14 @@ function convertTopToBottom() {
     const result = proj4(
         "EPSG:4326",
         "EPSG:2193",
-        [lonParsed.value, latParsed.value]
+        [lon, lat]
     );
 
     currentCoordinate = {
-        lat: latParsed.value,
-        lon: lonParsed.value,
-        east: result[0],
-        north: result[1]
+        lat,
+        lon,
+        east: roundToMeter(result[0]),
+        north: roundToMeter(result[1])
     };
 
     updateLatLonInputs();
@@ -230,8 +439,8 @@ function convertBottomToTop() {
         currentCoordinate = {
             lat: result[1],
             lon: result[0],
-            east: eastParsed.value,
-            north: northParsed.value
+            east: roundToMeter(eastParsed.value),
+            north: roundToMeter(northParsed.value)
         };
         updateLatLonInputs();
         updateDisplay();
@@ -369,29 +578,35 @@ function resolveTopo50GridToNzTm(sheet, grid) {
     return null;
 }
 
-function toggleDisplay() {
-    const saved = saveBottomInputAsCurrentCoordinate();
-    if (!saved) {
-        alert('Please enter a valid value in the bottom input before switching display modes.');
-        return;
-    }
+function setBottomDisplayMode(mode) {
+    if (mode !== "NZTM" && mode !== "TOPO50") return;
 
-    displayMode = displayMode == "NZTM" ? "TOPO50" : "NZTM";
+    displayMode = mode;
     updateDisplay();
     updateLatLonInputs();
 }
 
+function toggleDisplay() {
+    setBottomDisplayMode(displayMode == "NZTM" ? "TOPO50" : "NZTM");
+}
+
 function updateDisplay() {
-    document.getElementById("displayButton").textContent =
-        "Display: " + displayMode;
+    const nztmButton = document.getElementById("bottomModeNztm");
+    const topoButton = document.getElementById("bottomModeTopo50");
+    if (nztmButton && topoButton) {
+        nztmButton.classList.toggle('active', displayMode === "NZTM");
+        topoButton.classList.toggle('active', displayMode === "TOPO50");
+        nztmButton.setAttribute('aria-pressed', displayMode === "NZTM" ? 'true' : 'false');
+        topoButton.setAttribute('aria-pressed', displayMode === "TOPO50" ? 'true' : 'false');
+    }
 
     if (displayMode == "NZTM") {
         document.getElementById("resultLabel1").textContent = "Easting:";
         document.getElementById("resultLabel2").textContent = "Northing:";
         document.getElementById("result1").value =
-            currentCoordinate.east !== null ? formatNumber(currentCoordinate.east, 3) : "";
+            currentCoordinate.east !== null ? formatNzTm(currentCoordinate.east) : "";
         document.getElementById("result2").value =
-            currentCoordinate.north !== null ? formatNumber(currentCoordinate.north, 3) : "";
+            currentCoordinate.north !== null ? formatNzTm(currentCoordinate.north) : "";
     } else {
         document.getElementById("resultLabel1").textContent = "Sheet:";
         document.getElementById("resultLabel2").textContent = "Grid:";
@@ -433,8 +648,7 @@ function displayTopo50() {
 
     document.getElementById("result1").value = sheet.sheet;
     document.getElementById("result2").value = `${eastText} ${northText}`;
-    document.getElementById("detailText").textContent =
-        `100km block origin: E=${blockOriginEast}, N=${blockOriginNorth}. Local metres: E=${localEast.toFixed(3)}, N=${localNorth.toFixed(3)}.`;
+    document.getElementById("detailText").textContent = "";
 }
 
 window.addEventListener('beforeinstallprompt', event => {
@@ -448,23 +662,27 @@ window.addEventListener('beforeinstallprompt', event => {
 });
 
 window.addEventListener('appinstalled', () => {
+    appInstalled = true;
     deferredInstallPrompt = null;
     const installButton = document.getElementById('installButton');
     if (installButton) {
-        installButton.style.display = 'none';
+        installButton.textContent = 'App Installed';
     }
     document.getElementById('detailText').textContent = 'App installed.';
 });
 
 function promptInstall() {
-    if (isIos()) {
-        alert(getIosInstallInstructions());
-        document.getElementById('detailText').textContent = getIosInstallInstructions();
+    if (isStandaloneMode() || appInstalled) {
+        const installedMessage = 'This app is already installed on this device.';
+        alert(installedMessage);
+        document.getElementById('detailText').textContent = installedMessage;
         return;
     }
 
     if (!deferredInstallPrompt) {
-        alert('Install prompt has not fired yet. In Chrome, use your browser menu and choose "Add to Home screen" or return to this page after interacting with it. In Safari press Share, scroll down and click Add to Home Screen');
+        const instructions = getInstallInstructions();
+        alert(instructions);
+        document.getElementById('detailText').textContent = instructions;
         return;
     }
 
@@ -472,20 +690,29 @@ function promptInstall() {
     deferredInstallPrompt.userChoice.then(choiceResult => {
         if (choiceResult.outcome === 'accepted') {
             document.getElementById('detailText').textContent = 'Thanks for installing the app!';
+            appInstalled = true;
+            const installButton = document.getElementById('installButton');
+            if (installButton) {
+                installButton.textContent = 'App Installed';
+            }
         } else {
-            document.getElementById('detailText').textContent = 'Install dismissed. You can install later from the browser menu.';
+            document.getElementById('detailText').textContent = 'Install dismissed. ' + getInstallInstructions();
         }
         deferredInstallPrompt = null;
-        const installButton = document.getElementById('installButton');
-        if (installButton) {
-            installButton.style.display = 'none';
-        }
     });
 }
 
 window.addEventListener('load', async () => {
+    appInstalled = isStandaloneMode();
+
     await loadTopo50Data();
+    updateTopDisplay();
     updateDisplay();
+
+    const installButton = document.getElementById('installButton');
+    if (installButton && appInstalled) {
+        installButton.textContent = 'App Installed';
+    }
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('service-worker.js')
