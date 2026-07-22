@@ -17,7 +17,7 @@ let topoSheets = [];
 let topoSheetsLoaded = false;
 let deferredInstallPrompt = null;
 let appInstalled = false;
-const APP_VERSION = '4';
+const APP_VERSION = '5';
 
 const EXAMPLES = {
     DD: {
@@ -303,6 +303,10 @@ function saveBottomInputAsCurrentCoordinate() {
     }
 
     const sheetCode = raw1.toUpperCase();
+    if (sheetCode === "OUT OF RANGE" || sheetCode === "TOPO50 DATA UNAVAILABLE") {
+        return currentCoordinate.lat !== null && currentCoordinate.lon !== null;
+    }
+
     const sheet = findTopo50SheetByCode(sheetCode);
     const grid = parseTopo50Grid(raw2);
     if (!sheet || !grid) return false;
@@ -374,6 +378,28 @@ function setBottomSyncWarning(message) {
     note.textContent = message || '';
 }
 
+function clearAllValues() {
+    currentCoordinate = {
+        lat: null,
+        lon: null,
+        east: null,
+        north: null
+    };
+
+    document.getElementById('lat').value = '';
+    document.getElementById('lon').value = '';
+    document.getElementById('result1').value = '';
+    document.getElementById('result2').value = '';
+
+    setTopSyncWarning('');
+    setBottomSyncWarning('');
+    document.getElementById('detailText').textContent = '';
+    document.getElementById('installStatus').textContent = '';
+
+    updateTopDisplay();
+    updateDisplay(false);
+}
+
 function setTopDisplayMode(mode) {
     if (mode !== "DD" && mode !== "DMS") return;
 
@@ -409,7 +435,8 @@ function inputCurrentGPS() {
         currentCoordinate.lat = position.coords.latitude;
         currentCoordinate.lon = position.coords.longitude;
         updateLatLonInputs();
-        document.getElementById('detailText').textContent = 'GPS coordinates loaded successfully.';
+        convertTopToBottom();
+        document.getElementById('detailText').textContent = 'GPS coordinates loaded and converted successfully.';
     }, error => {
         let message = 'Unable to retrieve GPS location.';
 
