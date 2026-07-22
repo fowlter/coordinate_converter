@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 1.25rem;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: #1f2933;
+	background: #f7f9fb;
+}
+
+.app-shell {
+	max-width: 760px;
+	margin: 0 auto;
+	display: grid;
+	gap: 1rem;
+}
+
+h2,
+h3 {
+	margin: 0;
+}
+
+.input-panel {
+	display: grid;
+	gap: 0.6rem;
+	padding: 0.9rem;
+	border: 1px solid #c8d3df;
+	border-radius: 10px;
+	background: #ffffff;
+}
+
+.button-row {
+	display: flex;
+	gap: 0.6rem;
+	flex-wrap: wrap;
+}
+
+label {
+	font-weight: 600;
+}
+
+input,
+button {
+	min-height: 2.25rem;
+	padding: 0.45rem 0.75rem;
+	font-size: 0.95rem;
+	border-radius: 8px;
+}
+
+input {
+	border: 1px solid #b8c0c8;
+	background: #ffffff;
+	color: #1f2933;
+}
+
+button {
+	border: 1px solid #b8c0c8;
+	background: #ffffff;
+	color: #1f2933;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #f3f5f7;
+}
+
+.mode-switch {
+	display: inline-flex;
+	border: 1px solid #b8c0c8;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.mode-switch button {
+	border: 0;
+	background: #f3f5f7;
+	color: #1f2933;
+	border-radius: 0;
+}
+
+.mode-switch button + button {
+	border-left: 1px solid #c8ced6;
+}
+
+.mode-switch button.active {
+	background: #1f2933;
+	color: #ffffff;
+}
+
+#detailText {
+	min-height: 1.25rem;
+	font-size: 0.9em;
+	color: #444;
+}
+
+#installStatus {
+	min-height: 1rem;
+	font-size: 0.85em;
+	color: #666;
+}
+
+@media (max-width: 640px) {
+	body {
+		padding: 0.8rem;
+	}
+
+	.mode-switch {
+		width: 100%;
+	}
+
+	.mode-switch button {
+		flex: 1;
+	}
+
+	.button-row button {
+		flex: 1 1 100%;
+	}
+}
