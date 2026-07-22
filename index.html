@@ -6,36 +6,55 @@
     <title>NZ Coordinate Converter</title>
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="icon-192.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<main class="app-shell">
+    <h2>Latitude / Longitude → NZTM2000</h2>
 
-<h2>Latitude / Longitude → NZTM2000</h2>
+    <div class="button-row">
+        <button id="gpsButton" onclick="inputCurrentGPS()">Use Current GPS Coordinates</button>
+        <button id="installButton" onclick="promptInstall()">Install App</button>
+    </div>
 
-<button id="gpsButton" onclick="inputCurrentGPS()">Use Current GPS Coordinates</button>
- <button id="installButton" onclick="promptInstall()" style="margin-left:1rem;">Install App</button><br><br>
-<h3>Top Input</h3>
+    <section class="input-panel">
+        <h3>Top Input</h3>
 
-Latitude<br>
-<input id="lat"><br><br>
+        <label for="lat" id="latLabel">Latitude:</label>
+        <input id="lat">
 
-Longitude<br>
-<input id="lon"><br><br>
+        <label for="lon" id="lonLabel">Longitude:</label>
+        <input id="lon">
 
-<button id="convertTopButton" onclick="convertTopToBottom()">Convert Top → Bottom</button>
-<button id="convertBottomButton" onclick="convertBottomToTop()">Convert Bottom → Top</button><br><br>
+        <div class="mode-switch" aria-label="Top input format switch">
+            <button id="topModeDd" onclick="setTopDisplayMode('DD')">Decimal Degrees</button>
+            <button id="topModeDms" onclick="setTopDisplayMode('DMS')">Degrees Minutes Seconds</button>
+        </div>
+    </section>
 
-<h3>Bottom Input</h3>
+    <div class="button-row">
+        <button id="convertTopButton" onclick="convertTopToBottom()">Convert Top → Bottom</button>
+        <button id="convertBottomButton" onclick="convertBottomToTop()">Convert Bottom → Top</button>
+    </div>
 
-<span id="resultLabel1">Easting:</span>
-<input id="result1"><br><br>
+    <section class="input-panel">
+        <h3>Bottom Input</h3>
 
-<span id="resultLabel2">Northing:</span>
-<input id="result2"><br><br>
+        <label for="result1" id="resultLabel1">Easting:</label>
+        <input id="result1">
 
-<button id="displayButton" onclick="toggleDisplay()">Display: NZTM</button>
+        <label for="result2" id="resultLabel2">Northing:</label>
+        <input id="result2">
 
-<div id="detailText" style="font-size:0.9em; color:#444;"></div>
-<div id="installStatus" style="font-size:0.85em; color:#666; margin-top:0.5rem;"></div>
+        <div class="mode-switch" aria-label="Bottom input format switch">
+            <button id="bottomModeNztm" onclick="setBottomDisplayMode('NZTM')">NZTM</button>
+            <button id="bottomModeTopo50" onclick="setBottomDisplayMode('TOPO50')">NZTopo50</button>
+        </div>
+    </section>
+
+    <div id="detailText"></div>
+    <div id="installStatus"></div>
+</main>
 <script src="proj4.js"></script>
 <script src="script.js"></script>
 
