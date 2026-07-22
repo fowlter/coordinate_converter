@@ -1,4 +1,4 @@
-const CACHE_NAME = 'nz-coordinate-converter-v2';
+const CACHE_NAME = 'nz-coordinate-converter-v3';
 const ASSETS_TO_CACHE = [
   '.',
   'index.html',
