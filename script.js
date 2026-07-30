@@ -17,7 +17,7 @@ let topoSheets = [];
 let topoSheetsLoaded = false;
 let deferredInstallPrompt = null;
 let appInstalled = false;
-const APP_VERSION = '5';
+const APP_VERSION = '6';
 
 const EXAMPLES = {
     DD: {
