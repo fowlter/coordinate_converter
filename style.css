@@ -118,6 +118,18 @@ button:hover {
 	color: #666;
 }
 
+.made-by {
+	margin: 0;
+	padding-top: 0.2rem;
+	font-size: 0.82rem;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	color: #6b7280;
+	text-align: center;
+	border-top: 1px solid #d5dee8;
+	padding-bottom: 0.1rem;
+}
+
 @media (max-width: 640px) {
 	body {
 		padding: 0.8rem;
